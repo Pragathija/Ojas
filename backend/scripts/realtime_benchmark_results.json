@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-11-15T08:43:38.643326+00:00",
+  "environment": {
+    "os": "Windows 11 (10.0.26300)",
+    "python_version": "3.12.14",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD"
+  },
+  "sustained_ingestion": {
+    "packet_count": 60,
+    "total_elapsed_ms": 2383.66,
+    "per_packet_latency_ms": 39.73,
+    "sustained_throughput_packets_per_sec": 25.2
+  },
+  "burst_ingestion": {
+    "burst_size": 50,
+    "total_elapsed_ms": 82.37,
+    "burst_throughput_packets_per_sec": 607.0,
+    "per_packet_ms": 1.65
+  },
+  "concurrent_crew_orchestration": {
+    "crew_size_simulated": 6,
+    "total_packets_processed": 60,
+    "wall_time_ms": 377.68,
+    "concurrent_throughput_packets_per_sec": 158.9,
+    "mean_latency_ms": 32.69,
+    "p95_latency_ms": 52.89
+  },
+  "idempotency_and_recovery": {
+    "duplicate_burst": 50,
+    "total_elapsed_ms": 0.15,
+    "duplicate_check_throughput_per_sec": 331565.0,
+    "per_duplicate_latency_ms": 0.003
+  }
+}

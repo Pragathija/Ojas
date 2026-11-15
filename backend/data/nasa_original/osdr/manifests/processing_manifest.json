@@ -1,0 +1,508 @@
+{
+  "manifest_type": "OSDR_PROCESSING_MANIFEST",
+  "version": "1.0.0",
+  "generated_at": "2026-11-15T10:48:08.317402+00:00",
+  "repository": "NASA Open Science Data Repository",
+  "mission": "SpaceX Inspiration4 (SOMA)",
+  "data_context": "NASA_RESEARCH_DATA",
+  "total_harmonized_observations": 28,
+  "subjects": [
+    "C001",
+    "C002",
+    "C003",
+    "C004"
+  ],
+  "timepoints": [
+    "L-92",
+    "L-44",
+    "L-3",
+    "R+1",
+    "R+45",
+    "R+82",
+    "R+194"
+  ],
+  "records_provenance": [
+    {
+      "sample_id": "C001_serum_L-3",
+      "subject_id": "C001",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C001_serum_L-44",
+      "subject_id": "C001",
+      "timepoint": "L-44",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C001_serum_L-92",
+      "subject_id": "C001",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C001_serum_R+1",
+      "subject_id": "C001",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C001_serum_R+194",
+      "subject_id": "C001",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C001_serum_R+45",
+      "subject_id": "C001",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C001_serum_R+82",
+      "subject_id": "C001",
+      "timepoint": "R+82",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_L-3",
+      "subject_id": "C002",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_L-44",
+      "subject_id": "C002",
+      "timepoint": "L-44",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_L-92",
+      "subject_id": "C002",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_R+1",
+      "subject_id": "C002",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_R+194",
+      "subject_id": "C002",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_R+45",
+      "subject_id": "C002",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C002_serum_R+82",
+      "subject_id": "C002",
+      "timepoint": "R+82",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_L-3",
+      "subject_id": "C003",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_L-44",
+      "subject_id": "C003",
+      "timepoint": "L-44",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_L-92",
+      "subject_id": "C003",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_R+1",
+      "subject_id": "C003",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_R+194",
+      "subject_id": "C003",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_R+45",
+      "subject_id": "C003",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C003_serum_R+82",
+      "subject_id": "C003",
+      "timepoint": "R+82",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_L-3",
+      "subject_id": "C004",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_L-44",
+      "subject_id": "C004",
+      "timepoint": "L-44",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_L-92",
+      "subject_id": "C004",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_R+1",
+      "subject_id": "C004",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_R+194",
+      "subject_id": "C004",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_R+45",
+      "subject_id": "C004",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    },
+    {
+      "sample_id": "C004_serum_R+82",
+      "subject_id": "C004",
+      "timepoint": "R+82",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "data_context": "NASA_RESEARCH_DATA",
+      "source_repository": "NASA Open Science Data Repository (OSDR)",
+      "primary_accession": "OSD-575",
+      "source_files": [
+        "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+        "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv"
+      ],
+      "processing_version": "1.0.0",
+      "transformation_pipeline": "OSDRDataLoader.load_harmonized_observations",
+      "is_synthetic": false,
+      "is_live_telemetry": false
+    }
+  ],
+  "analysis_metadata": {},
+  "scientific_integrity_guarantee": {
+    "synthetic_data_mixing_prevented": true,
+    "live_telemetry_isolation_enforced": true,
+    "original_nasa_files_preserved": true
+  }
+}

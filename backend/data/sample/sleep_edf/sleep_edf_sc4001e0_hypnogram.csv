@@ -1,0 +1,21 @@
+epoch_index,onset_seconds,duration_seconds,sleep_stage,description
+0,0,30,W,Wake
+1,30,30,W,Wake
+2,60,30,W,Wake
+3,90,30,1,Stage 1 sleep
+4,120,30,1,Stage 1 sleep
+5,150,30,2,Stage 2 sleep
+6,180,30,2,Stage 2 sleep
+7,210,30,2,Stage 2 sleep
+8,240,30,3,Stage 3 slow wave sleep
+9,270,30,3,Stage 3 slow wave sleep
+10,300,30,4,Stage 4 slow wave sleep
+11,330,30,4,Stage 4 slow wave sleep
+12,360,30,2,Stage 2 sleep
+13,390,30,R,REM sleep
+14,420,30,R,REM sleep
+15,450,30,R,REM sleep
+16,480,30,2,Stage 2 sleep
+17,510,30,W,Wake (arousal)
+18,540,30,2,Stage 2 sleep
+19,570,30,R,REM sleep

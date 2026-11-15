@@ -1,0 +1,532 @@
+{
+  "title": "SpaceX Inspiration4 Longitudinal Multi-Omics and Blood Biomarkers (SOMA)",
+  "accessions": [
+    "OSD-575",
+    "OSD-569"
+  ],
+  "subjects": [
+    "C001",
+    "C002",
+    "C003",
+    "C004"
+  ],
+  "timepoints": [
+    "L-92",
+    "L-44",
+    "L-3",
+    "R+1",
+    "R+45",
+    "R+82",
+    "R+194"
+  ],
+  "total_harmonized_observations": 28,
+  "pre_to_post_flight_findings": {
+    "ast_u_l": {
+      "biomarker": "AST (Aspartate Aminotransferase)",
+      "pre_flight_l3": {
+        "mean": 26.75,
+        "median": 27.0,
+        "std": 12.77,
+        "iqr": 24.75,
+        "min": 13.0,
+        "max": 40.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 26.25,
+        "median": 20.5,
+        "std": 12.81,
+        "iqr": 11.75,
+        "min": 16.0,
+        "max": 48.0,
+        "count": 4
+      },
+      "delta": -0.5,
+      "percent_change": -1.9,
+      "direction": "DECREASED"
+    },
+    "alt_u_l": {
+      "biomarker": "ALT (Alanine Aminotransferase)",
+      "pre_flight_l3": {
+        "mean": 20.5,
+        "median": 16.0,
+        "std": 9.84,
+        "iqr": 10.5,
+        "min": 13.0,
+        "max": 37.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 21.0,
+        "median": 17.5,
+        "std": 11.55,
+        "iqr": 10.0,
+        "min": 9.0,
+        "max": 40.0,
+        "count": 4
+      },
+      "delta": 0.5,
+      "percent_change": 2.4,
+      "direction": "INCREASED"
+    },
+    "glucose_mg_dl": {
+      "biomarker": "Fasting Glucose",
+      "pre_flight_l3": {
+        "mean": 69.5,
+        "median": 72.0,
+        "std": 8.44,
+        "iqr": 10.0,
+        "min": 56.0,
+        "max": 78.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 93.25,
+        "median": 93.5,
+        "std": 7.5,
+        "iqr": 10.25,
+        "min": 83.0,
+        "max": 103.0,
+        "count": 4
+      },
+      "delta": 23.75,
+      "percent_change": 34.2,
+      "direction": "INCREASED"
+    },
+    "sodium_mmol_l": {
+      "biomarker": "Serum Sodium",
+      "pre_flight_l3": {
+        "mean": 141.0,
+        "median": 141.5,
+        "std": 1.87,
+        "iqr": 2.0,
+        "min": 138.0,
+        "max": 143.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 138.0,
+        "median": 137.5,
+        "std": 1.22,
+        "iqr": 1.5,
+        "min": 137.0,
+        "max": 140.0,
+        "count": 4
+      },
+      "delta": -3.0,
+      "percent_change": -2.1,
+      "direction": "DECREASED"
+    },
+    "potassium_mmol_l": {
+      "biomarker": "Serum Potassium",
+      "pre_flight_l3": {
+        "mean": 3.67,
+        "median": 3.75,
+        "std": 0.23,
+        "iqr": 0.22,
+        "min": 3.3,
+        "max": 3.9,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 3.73,
+        "median": 3.75,
+        "std": 0.53,
+        "iqr": 0.72,
+        "min": 3.0,
+        "max": 4.4,
+        "count": 4
+      },
+      "delta": 0.06,
+      "percent_change": 1.6,
+      "direction": "INCREASED"
+    },
+    "creatinine_mg_dl": {
+      "biomarker": "Serum Creatinine",
+      "pre_flight_l3": {
+        "mean": 1.14,
+        "median": 1.1,
+        "std": 0.15,
+        "iqr": 0.14,
+        "min": 0.96,
+        "max": 1.37,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 1.03,
+        "median": 1.04,
+        "std": 0.11,
+        "iqr": 0.19,
+        "min": 0.89,
+        "max": 1.15,
+        "count": 4
+      },
+      "delta": -0.11,
+      "percent_change": -9.6,
+      "direction": "DECREASED"
+    },
+    "urea_nitrogen_bun_mg_dl": {
+      "biomarker": "Blood Urea Nitrogen (BUN)",
+      "pre_flight_l3": {
+        "mean": 20.5,
+        "median": 19.5,
+        "std": 3.35,
+        "iqr": 3.0,
+        "min": 17.0,
+        "max": 26.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 21.25,
+        "median": 20.5,
+        "std": 2.95,
+        "iqr": 2.75,
+        "min": 18.0,
+        "max": 26.0,
+        "count": 4
+      },
+      "delta": 0.75,
+      "percent_change": 3.7,
+      "direction": "INCREASED"
+    },
+    "white_blood_cells_cells_ul": {
+      "biomarker": "White Blood Cells",
+      "pre_flight_l3": {
+        "mean": 8.65,
+        "median": 8.5,
+        "std": 1.58,
+        "iqr": 2.85,
+        "min": 7.0,
+        "max": 10.6,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 6.4,
+        "median": 6.25,
+        "std": 1.23,
+        "iqr": 1.9,
+        "min": 5.0,
+        "max": 8.1,
+        "count": 4
+      },
+      "delta": -2.25,
+      "percent_change": -26.0,
+      "direction": "DECREASED"
+    },
+    "platelets_thousand_cells_ul": {
+      "biomarker": "Platelets",
+      "pre_flight_l3": {
+        "mean": 290.25,
+        "median": 276.5,
+        "std": 48.42,
+        "iqr": 59.25,
+        "min": 241.0,
+        "max": 367.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 269.5,
+        "median": 246.0,
+        "std": 52.42,
+        "iqr": 42.0,
+        "min": 227.0,
+        "max": 359.0,
+        "count": 4
+      },
+      "delta": -20.75,
+      "percent_change": -7.1,
+      "direction": "DECREASED"
+    },
+    "hematocrit_pct": {
+      "biomarker": "Hematocrit",
+      "pre_flight_l3": {
+        "mean": 42.75,
+        "median": 43.05,
+        "std": 4.75,
+        "iqr": 5.45,
+        "min": 35.9,
+        "max": 49.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 42.42,
+        "median": 42.5,
+        "std": 4.28,
+        "iqr": 4.62,
+        "min": 36.4,
+        "max": 48.3,
+        "count": 4
+      },
+      "delta": -0.33,
+      "percent_change": -0.8,
+      "direction": "DECREASED"
+    },
+    "absolute_lymphocytes_cells_ul": {
+      "biomarker": "Absolute Lymphocytes",
+      "pre_flight_l3": {
+        "mean": 2910.75,
+        "median": 2910.0,
+        "std": 174.86,
+        "iqr": 177.75,
+        "min": 2667.0,
+        "max": 3156.0,
+        "count": 4
+      },
+      "post_flight_r1": {
+        "mean": 1855.25,
+        "median": 1863.0,
+        "std": 268.71,
+        "iqr": 488.25,
+        "min": 1540.0,
+        "max": 2155.0,
+        "count": 4
+      },
+      "delta": -1055.5,
+      "percent_change": -36.3,
+      "direction": "DECREASED"
+    }
+  },
+  "reference_range_excursions": [
+    {
+      "subject_id": "C001",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Creatinine",
+      "value": 1.37,
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.35",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C001",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "BUN",
+      "value": 28.0,
+      "unit": "mg/dL",
+      "reference_range": "7.0-25.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C002",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "AST",
+      "value": 40.0,
+      "unit": "U/L",
+      "reference_range": "10.0-35.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C002",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 44.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "BUN",
+      "value": 26.0,
+      "unit": "mg/dL",
+      "reference_range": "7.0-25.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Potassium",
+      "value": 3.3,
+      "unit": "mmol/L",
+      "reference_range": "3.5-5.3",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "L-44",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 62.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Complete Blood Count",
+      "biomarker": "Platelets",
+      "value": 12.9,
+      "unit": "x10^3/uL",
+      "reference_range": "140.0-400.0",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Complete Blood Count",
+      "biomarker": "Lymphocytes",
+      "value": 6826.0,
+      "unit": "cells/uL",
+      "reference_range": "850.0-3900.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 103.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Potassium",
+      "value": 3.0,
+      "unit": "mmol/L",
+      "reference_range": "3.5-5.3",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "BUN",
+      "value": 28.0,
+      "unit": "mg/dL",
+      "reference_range": "7.0-25.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C003",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 36.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "L-3",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 56.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "L-44",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "AST",
+      "value": 44.0,
+      "unit": "U/L",
+      "reference_range": "10.0-40.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "L-92",
+      "phase": "PRE_FLIGHT_BASELINE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 100.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "AST",
+      "value": 48.0,
+      "unit": "U/L",
+      "reference_range": "10.0-40.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "R+1",
+      "phase": "POST_FLIGHT_ACUTE",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "BUN",
+      "value": 26.0,
+      "unit": "mg/dL",
+      "reference_range": "7.0-25.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "R+194",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "BUN",
+      "value": 27.0,
+      "unit": "mg/dL",
+      "reference_range": "7.0-25.0",
+      "excursion_type": "HIGH"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Glucose",
+      "value": 43.0,
+      "unit": "mg/dL",
+      "reference_range": "65.0-99.0",
+      "excursion_type": "LOW"
+    },
+    {
+      "subject_id": "C004",
+      "timepoint": "R+45",
+      "phase": "POST_FLIGHT_RECOVERY",
+      "panel": "Comprehensive Metabolic Panel",
+      "biomarker": "Potassium",
+      "value": 5.9,
+      "unit": "mmol/L",
+      "reference_range": "3.5-5.3",
+      "excursion_type": "HIGH"
+    }
+  ],
+  "missing_data_profile": {
+    "total_observations": 28,
+    "complete_triad_observations": 28,
+    "cmp_missing_observations": 0,
+    "cbc_missing_observations": 0,
+    "cytokines_missing_observations": 0,
+    "completeness_rate_pct": 100.0
+  },
+  "data_context": "NASA_RESEARCH_DATA",
+  "scientific_disclaimer": "NASA OSDR research observations represent retrospective spaceflight multi-omics and biospecimen measurements. They are strictly isolated from real-time astronaut telemetry baselines and do not constitute real-time clinical diagnostic alerts."
+}

@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-11-15T08:28:31.738960+00:00",
+  "environment": {
+    "os": "Windows 11 (10.0.26300)",
+    "python_version": "3.12.14",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD"
+  },
+  "single_record_inference": {
+    "iterations": 40,
+    "mean_ms": 55.1,
+    "median_ms": 54.98,
+    "p95_ms": 57.8,
+    "min_ms": 50.96,
+    "max_ms": 77.51
+  },
+  "batch_analysis": {
+    "batch_10": {
+      "total_time_ms": 31.58,
+      "per_record_ms": 3.16,
+      "throughput_records_per_sec": 316.7
+    },
+    "batch_25": {
+      "total_time_ms": 383.92,
+      "per_record_ms": 15.36,
+      "throughput_records_per_sec": 65.1
+    },
+    "batch_50": {
+      "total_time_ms": 1801.26,
+      "per_record_ms": 36.03,
+      "throughput_records_per_sec": 27.8
+    }
+  },
+  "concurrent_inference": {
+    "num_workers": 4,
+    "total_requests": 32,
+    "wall_time_ms": 2026.72,
+    "throughput_req_per_sec": 15.8,
+    "mean_latency_ms": 241.26
+  },
+  "dataset_and_memory": {
+    "nasa_brsmact_records_loaded": 207,
+    "dataset_load_time_ms": 37.99,
+    "memory_peak_kb": 401.41
+  }
+}

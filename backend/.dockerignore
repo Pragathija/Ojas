@@ -1,0 +1,41 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache & compiled objects
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Test caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+ojas.db
+test_ojas.db
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.local
+
+# Raw datasets
+data/raw/
+*.pkl
+*.pickle
+*.mat
+*.h5
+*.hdf5
+*.edf
+*.parquet

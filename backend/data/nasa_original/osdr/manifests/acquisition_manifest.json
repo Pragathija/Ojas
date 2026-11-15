@@ -1,0 +1,85 @@
+{
+  "manifest_version": "1.0.0",
+  "created_at": "2026-11-15T10:36:00.322593+00:00",
+  "repository": "NASA Open Science Data Repository (OSDR)",
+  "repository_url": "https://osdr.nasa.gov/",
+  "mission": "SpaceX Inspiration4 (SOMA Atlas)",
+  "studies": [
+    "OSD-575",
+    "OSD-569"
+  ],
+  "files": [
+    {
+      "accession": "OSD-575",
+      "file_name": "LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+      "category": "raw",
+      "relative_path": "raw/LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+      "file_size_bytes": 8506,
+      "sha256": "5eb1e7f025dd8443a9e70111e62bc32afae3432753024489c5c013e401d709d9",
+      "md5": "80aaff7db2c940d1cf810fa84324ef32",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-575/download?source=datamanager&file=LSDS-8_Comprehensive_Metabolic_Panel_CMP_TRANSFORMED.csv",
+      "acquired_at": "2026-11-15T10:36:03.639783+00:00",
+      "description": "SpaceX Inspiration4 Blood Serum Comprehensive Metabolic Panel (Quest Diagnostics)"
+    },
+    {
+      "accession": "OSD-575",
+      "file_name": "LSDS-8_Multiplex_serum_cardiovascular_EvePanel_TRANSFORMED.csv",
+      "category": "raw",
+      "relative_path": "raw/LSDS-8_Multiplex_serum_cardiovascular_EvePanel_TRANSFORMED.csv",
+      "file_size_bytes": 6207,
+      "sha256": "fdba6c3ce45401c12ca9b699fa375303793959aa0391e2f3c722f354d9cfc75c",
+      "md5": "badd9896458887d4e0097f11acf67dc8",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-575/download?source=datamanager&file=LSDS-8_Multiplex_serum_cardiovascular_EvePanel_TRANSFORMED.csv",
+      "acquired_at": "2026-11-15T10:36:06.606388+00:00",
+      "description": "SpaceX Inspiration4 Serum Cardiovascular Biomarkers (Eve Technologies HDCVD9)"
+    },
+    {
+      "accession": "OSD-575",
+      "file_name": "LSDS-8_Multiplex_serum_immune_EvePanel_TRANSFORMED.csv",
+      "category": "raw",
+      "relative_path": "raw/LSDS-8_Multiplex_serum_immune_EvePanel_TRANSFORMED.csv",
+      "file_size_bytes": 41214,
+      "sha256": "efa8fb807e3b7e363df47f64f48d03c57d2397daf8fd22afc0ea4335d5d3d53e",
+      "md5": "b3d48356c9908542654130ebd7ac49d4",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-575/download?source=datamanager&file=LSDS-8_Multiplex_serum_immune_EvePanel_TRANSFORMED.csv",
+      "acquired_at": "2026-11-15T10:36:09.994688+00:00",
+      "description": "SpaceX Inspiration4 Serum Immune Cytokine Array (Eve Technologies)"
+    },
+    {
+      "accession": "OSD-575",
+      "file_name": "OSD-575_metadata_OSD-575-ISA.zip",
+      "category": "metadata",
+      "relative_path": "metadata/OSD-575_metadata_OSD-575-ISA.zip",
+      "file_size_bytes": 71702,
+      "sha256": "a1d3e49e2b61ab427a8760d0c98e0324a53272d0e1314632290266b014476f1d",
+      "md5": "5b29f50d6068120be2734f2a94357425",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-575/download?source=datamanager&file=OSD-575_metadata_OSD-575-ISA.zip",
+      "acquired_at": "2026-11-15T10:36:14.024996+00:00",
+      "description": "OSD-575 Complete Study Metadata (ISA-Tab archive)"
+    },
+    {
+      "accession": "OSD-569",
+      "file_name": "LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv",
+      "category": "raw",
+      "relative_path": "raw/LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv",
+      "file_size_bytes": 9317,
+      "sha256": "32e4f9c97d3b636b5d5c2e72dab8c4d3319dee64c437508b092dad04603b2b8f",
+      "md5": "06f3919e07b697119891ed0a777f8ee8",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-569/download?source=datamanager&file=LSDS-7_Complete_Blood_Count_CBC_TRANSFORMED.csv",
+      "acquired_at": "2026-11-15T10:36:17.209118+00:00",
+      "description": "SpaceX Inspiration4 Whole Blood Complete Blood Count (Quest Diagnostics)"
+    },
+    {
+      "accession": "OSD-569",
+      "file_name": "OSD-569_metadata_OSD-569-ISA.zip",
+      "category": "metadata",
+      "relative_path": "metadata/OSD-569_metadata_OSD-569-ISA.zip",
+      "file_size_bytes": 123512,
+      "sha256": "5b3c19c5079816b283125caf4009db8e39d48377d92763e9e61e86e3e1b4c159",
+      "md5": "b391305c6ea78a1d9dff78b6a73a5437",
+      "source_url": "https://osdr.nasa.gov/geode-py/ws/studies/OSD-569/download?source=datamanager&file=OSD-569_metadata_OSD-569-ISA.zip",
+      "acquired_at": "2026-11-15T10:36:20.631670+00:00",
+      "description": "OSD-569 Complete Study Metadata (ISA-Tab archive)"
+    }
+  ]
+}

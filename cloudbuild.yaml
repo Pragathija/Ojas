@@ -1,0 +1,35 @@
+# ==============================================================================
+# Google Cloud Build Manifest - Project Ojas Backend
+# Automated container build and push to Google Artifact Registry (asia-south1)
+# ==============================================================================
+
+steps:
+  # Step 1: Build the backend container image from repo root context
+  - name: "gcr.io/cloud-builders/docker"
+    id: "build-backend"
+    args:
+      - "build"
+      - "-f"
+      - "infrastructure/docker/backend.Dockerfile"
+      - "-t"
+      - "asia-south1-docker.pkg.dev/$PROJECT_ID/ojas-repo/ojas-api:$COMMIT_SHA"
+      - "-t"
+      - "asia-south1-docker.pkg.dev/$PROJECT_ID/ojas-repo/ojas-api:latest"
+      - "."
+
+  # Step 2: Push container images to Google Artifact Registry
+  - name: "gcr.io/cloud-builders/docker"
+    id: "push-backend"
+    args:
+      - "push"
+      - "--all-tags"
+      - "asia-south1-docker.pkg.dev/$PROJECT_ID/ojas-repo/ojas-api"
+
+images:
+  - "asia-south1-docker.pkg.dev/$PROJECT_ID/ojas-repo/ojas-api:$COMMIT_SHA"
+  - "asia-south1-docker.pkg.dev/$PROJECT_ID/ojas-repo/ojas-api:latest"
+
+options:
+  logging: CLOUD_LOGGING_ONLY
+
+timeout: "900s"

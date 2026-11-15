@@ -1,0 +1,208 @@
+id,subject,date,test_phase,br_day,sleep_duration_minutes,sleep_latency_minutes,sleep_efficiency_pct,medication_note,record_number,is_missing_data,source_file
+1,C1G0001,2004-09-07,PRE_TEST,2,464.0,14.0,92.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+2,C1G0001,2004-09-08,PRE_TEST,1,470.0,6.0,95.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+3,C1G0001,2004-09-09,IN_TEST,1,472.0,0.0,90.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+4,C1G0001,2004-09-10,IN_TEST,2,462.0,12.0,91.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+5,C1G0001,2004-09-11,IN_TEST,3,458.0,20.0,94.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+6,C1G0001,2004-09-12,IN_TEST,4,466.0,12.0,95.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+7,C1G0001,2004-09-13,IN_TEST,5,468.0,10.0,96.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+8,C1G0001,2004-09-14,IN_TEST,6,454.0,22.0,93.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+9,C1G0001,2004-09-15,IN_TEST,7,460.0,18.0,95.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+10,C1G0001,2004-09-16,IN_TEST,8,448.0,8.0,90.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+11,C1G0001,2004-09-17,IN_TEST,9,448.0,30.0,91.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+12,C1G0001,2004-09-18,IN_TEST,10,462.0,16.0,95.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+13,C1G0001,2004-09-19,IN_TEST,11,440.0,38.0,89.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+14,C1G0001,2004-09-20,IN_TEST,12,422.0,56.0,85.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+15,C1G0001,2004-09-21,IN_TEST,13,442.0,36.0,90.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+16,C1G0001,2004-09-22,IN_TEST,14,454.0,24.0,92.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+17,C1G0001,2004-09-23,IN_TEST,15,434.0,44.0,88.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+18,C1G0001,2004-09-24,IN_TEST,16,456.0,22.0,93.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+19,C1G0001,2004-09-25,IN_TEST,17,458.0,20.0,93.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+20,C1G0001,2004-09-26,IN_TEST,18,442.0,36.0,85.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+21,C1G0001,2004-09-27,IN_TEST,19,442.0,36.0,91.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+22,C1G0001,2004-09-28,IN_TEST,20,430.0,48.0,84.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+23,C1G0001,2004-09-29,IN_TEST,21,450.0,28.0,88.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+24,C1G0001,2004-09-30,IN_TEST,22,436.0,42.0,85.0,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+25,C1G0001,2004-10-01,IN_TEST,23,464.0,14.0,94.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+26,C1G0001,2004-10-02,IN_TEST,24,454.0,24.0,91.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+27,C1G0001,2004-10-03,IN_TEST,25,452.0,26.0,91.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+28,C1G0001,2004-10-04,IN_TEST,26,430.0,36.0,85.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+29,C1G0001,2004-10-05,IN_TEST,27,444.0,34.0,87.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+30,C1G0001,2004-10-06,IN_TEST,28,440.0,38.0,89.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+31,C1G0001,2004-10-07,IN_TEST,29,452.0,26.0,92.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+32,C1G0001,2004-10-08,IN_TEST,30,430.0,48.0,87.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+33,C1G0001,2004-10-09,IN_TEST,31,416.0,62.0,84.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+34,C1G0001,2004-10-10,IN_TEST,32,436.0,42.0,88.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+35,C1G0001,2004-10-11,IN_TEST,33,428.0,50.0,87.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+36,C1G0001,2004-10-12,IN_TEST,34,450.0,22.0,91.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+37,C1G0001,2004-10-13,IN_TEST,35,408.0,70.0,82.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+38,C1G0001,2004-10-14,IN_TEST,36,406.0,72.0,79.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+39,C1G0001,2004-10-15,IN_TEST,37,456.0,22.0,94.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+40,C1G0001,2004-10-16,IN_TEST,38,452.0,26.0,90.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+41,C1G0001,2004-10-17,IN_TEST,39,444.0,34.0,90.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+42,C1G0001,2004-10-18,IN_TEST,40,420.0,58.0,85.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+43,C1G0001,2004-10-19,IN_TEST,41,436.0,42.0,89.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+44,C1G0001,2004-10-20,IN_TEST,42,446.0,32.0,92.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+45,C1G0001,2004-10-21,IN_TEST,43,428.0,46.0,88.3,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+46,C1G0001,2004-10-22,IN_TEST,44,432.0,36.0,87.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+47,C1G0001,2004-10-23,IN_TEST,45,450.0,24.0,92.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+48,C1G0001,2004-10-24,IN_TEST,46,444.0,34.0,91.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+49,C1G0001,2004-10-25,IN_TEST,47,404.0,74.0,82.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+50,C1G0001,2004-10-26,IN_TEST,48,444.0,34.0,90.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+51,C1G0001,2004-10-27,IN_TEST,49,436.0,42.0,90.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+52,C1G0001,2004-10-28,IN_TEST,50,422.0,56.0,87.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+53,C1G0001,2004-10-29,IN_TEST,51,446.0,32.0,92.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+54,C1G0001,2004-10-30,IN_TEST,52,458.0,0.0,85.0,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+55,C1G0001,2004-10-31,IN_TEST,53,324.0,154.0,65.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+56,C1G0001,2004-11-01,IN_TEST,54,336.0,142.0,68.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+57,C1G0001,2004-11-02,IN_TEST,55,302.0,176.0,62.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+58,C1G0001,2004-11-03,IN_TEST,56,364.0,114.0,74.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+59,C1G0001,2004-11-04,IN_TEST,57,358.0,120.0,72.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+60,C1G0001,2004-11-05,IN_TEST,58,422.0,56.0,85.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+61,C1G0001,2004-11-06,IN_TEST,59,432.0,46.0,86.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+62,C1G0001,2004-11-07,IN_TEST,60,448.0,30.0,92.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+63,C1G0001,2004-11-08,POST_TEST,0,456.0,22.0,87.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+64,C1G0001,2004-11-09,POST_TEST,1,478.0,0.0,90.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+65,C1G0001,2004-11-10,POST_TEST,2,458.0,20.0,89.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+66,C1G0001,2004-11-11,POST_TEST,3,448.0,30.0,87.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+67,C1G0001,2004-11-12,POST_TEST,4,458.0,20.0,90.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+68,C1G0001,2004-11-13,POST_TEST,5,448.0,30.0,89.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+69,C1G0001,2004-11-14,POST_TEST,6,438.0,40.0,90.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+70,C1G0002,2004-09-07,PRE_TEST,2,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+71,C1G0002,2004-09-08,PRE_TEST,1,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+72,C1G0002,2004-09-09,IN_TEST,1,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+73,C1G0002,2004-09-10,IN_TEST,2,456.0,4.0,79.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+74,C1G0002,2004-09-11,IN_TEST,3,444.0,20.0,82.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+75,C1G0002,2004-09-12,IN_TEST,4,456.0,10.0,74.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+76,C1G0002,2004-09-13,IN_TEST,5,428.0,4.0,74.6,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+77,C1G0002,2004-09-14,IN_TEST,6,364.0,100.0,52.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+78,C1G0002,2004-09-15,IN_TEST,7,474.0,0.0,84.6,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+79,C1G0002,2004-09-16,IN_TEST,8,436.0,36.0,79.2,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+80,C1G0002,2004-09-17,IN_TEST,9,462.0,16.0,81.3,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+81,C1G0002,2004-09-18,IN_TEST,10,430.0,48.0,68.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+82,C1G0002,2004-09-19,IN_TEST,11,436.0,32.0,79.2,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+83,C1G0002,2004-09-20,IN_TEST,12,418.0,60.0,72.1,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+84,C1G0002,2004-09-21,IN_TEST,13,464.0,14.0,75.4,Ambien 5mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+85,C1G0002,2004-09-22,IN_TEST,14,410.0,68.0,68.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+86,C1G0002,2004-09-23,IN_TEST,15,458.0,20.0,85.4,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+87,C1G0002,2004-09-24,IN_TEST,16,460.0,18.0,81.3,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+88,C1G0002,2004-09-25,IN_TEST,17,462.0,16.0,82.5,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+89,C1G0002,2004-09-26,IN_TEST,18,440.0,34.0,79.2,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+90,C1G0002,2004-09-27,IN_TEST,19,450.0,28.0,83.8,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+91,C1G0002,2004-09-28,IN_TEST,20,406.0,28.0,75.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+92,C1G0002,2004-09-29,IN_TEST,21,462.0,16.0,87.1,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+93,C1G0002,2004-09-30,IN_TEST,22,398.0,80.0,67.5,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+94,C1G0002,2004-10-01,IN_TEST,23,450.0,14.0,82.9,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+95,C1G0002,2004-10-02,IN_TEST,24,456.0,22.0,83.3,Diphenhydramine 25mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+96,C1G0002,2004-10-03,IN_TEST,25,458.0,20.0,75.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+97,C1G0002,2004-10-04,IN_TEST,26,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+98,C1G0002,2004-10-05,IN_TEST,27,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+99,C1G0002,2004-10-06,IN_TEST,28,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+100,C1G0002,2004-10-07,IN_TEST,29,,,,,,True,BRSMACT_Campagin_1_Actigraphy.csv
+101,C1G0002,2004-10-08,IN_TEST,30,438.0,36.0,82.5,Diphenhydramine 25mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+102,C1G0002,2004-10-09,IN_TEST,31,412.0,36.0,77.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+103,C1G0002,2004-10-10,IN_TEST,32,434.0,20.0,84.2,Diphenhydramine 25mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+104,C1G0002,2004-10-11,IN_TEST,33,416.0,62.0,76.7,Diphenhydramine 25mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+105,C1G0002,2004-10-12,IN_TEST,34,444.0,34.0,70.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+106,C1G0002,2004-10-13,IN_TEST,35,460.0,16.0,84.2,Diphenhydramine 25mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+107,C1G0002,2004-10-14,IN_TEST,36,438.0,26.0,74.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+108,C1G0002,2004-10-15,IN_TEST,37,440.0,38.0,78.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+109,C1G0002,2004-10-16,IN_TEST,38,456.0,22.0,81.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+110,C1G0002,2004-10-17,IN_TEST,39,446.0,32.0,74.6,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+111,C1G0002,2004-10-18,IN_TEST,40,406.0,72.0,70.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+112,C1G0002,2004-10-19,IN_TEST,41,338.0,140.0,62.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+113,C1G0002,2004-10-20,IN_TEST,42,448.0,30.0,77.5,Diphenhydramine 50mg,,False,BRSMACT_Campagin_1_Actigraphy.csv
+114,C1G0002,2004-10-21,IN_TEST,43,440.0,30.0,77.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+115,C1G0002,2004-10-22,IN_TEST,44,438.0,40.0,80.0,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+116,C1G0002,2004-10-23,IN_TEST,45,440.0,38.0,80.0,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+117,C1G0002,2004-10-24,IN_TEST,46,460.0,18.0,81.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+118,C1G0002,2004-10-25,IN_TEST,47,458.0,20.0,87.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+119,C1G0002,2004-10-26,IN_TEST,48,448.0,30.0,81.3,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+120,C1G0002,2004-10-27,IN_TEST,49,402.0,64.0,75.0,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+121,C1G0002,2004-10-28,IN_TEST,50,444.0,20.0,80.8,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+122,C1G0002,2004-10-29,IN_TEST,51,446.0,24.0,81.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+123,C1G0002,2004-10-30,IN_TEST,52,460.0,18.0,82.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+124,C1G0002,2004-10-31,IN_TEST,53,386.0,84.0,67.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+125,C1G0002,2004-11-01,IN_TEST,54,370.0,88.0,66.7,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+126,C1G0002,2004-11-02,IN_TEST,55,404.0,74.0,77.5,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+127,C1G0002,2004-11-03,IN_TEST,56,400.0,78.0,72.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+128,C1G0002,2004-11-04,IN_TEST,57,388.0,90.0,67.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+129,C1G0002,2004-11-05,IN_TEST,58,422.0,32.0,77.1,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+130,C1G0002,2004-11-06,IN_TEST,59,386.0,92.0,69.2,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+131,C1G0002,2004-11-07,IN_TEST,60,458.0,20.0,85.4,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+132,C1G0002,2004-11-08,POST_TEST,0,450.0,28.0,82.9,,,False,BRSMACT_Campagin_1_Actigraphy.csv
+133,C1G0002,2004-11-09,POST_TEST,1,440.0,38.0,83.8,,4180.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+134,C1G0002,2004-11-10,POST_TEST,2,448.0,30.0,77.5,,4181.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+135,C1G0002,2004-11-11,POST_TEST,3,446.0,28.0,82.5,,4183.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+136,C1G0002,2004-11-12,POST_TEST,4,438.0,40.0,79.2,,4185.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+137,C1G0002,2004-11-13,POST_TEST,5,370.0,108.0,70.8,,4187.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+138,C1G0002,2004-11-14,POST_TEST,6,450.0,28.0,73.8,,4189.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+139,C1G0003,2004-09-07,PRE_TEST,2,,,,,4019.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+140,C1G0003,2004-09-08,PRE_TEST,1,,,,,4021.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+141,C1G0003,2004-09-09,IN_TEST,1,,,,,4022.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+142,C1G0003,2004-09-10,IN_TEST,2,,,,,4093.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+143,C1G0003,2004-09-11,IN_TEST,3,,,,,4024.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+144,C1G0003,2004-09-12,IN_TEST,4,,,,,4095.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+145,C1G0003,2004-09-13,IN_TEST,5,,,,Ambien 5mg,4026.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+146,C1G0003,2004-09-14,IN_TEST,6,,,,,4097.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+147,C1G0003,2004-09-15,IN_TEST,7,,,,Ambien 5mg,4028.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+148,C1G0003,2004-09-16,IN_TEST,8,,,,Ambien 5mg,4099.0,True,BRSMACT_Campagin_1_Actigraphy.csv
+149,C1G0003,2004-09-17,IN_TEST,9,454.0,16.0,77.5,Ambien 5mg,4208.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+150,C1G0003,2004-09-18,IN_TEST,10,456.0,22.0,87.1,,4101.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+151,C1G0003,2004-09-19,IN_TEST,11,452.0,26.0,77.1,Ambien 5mg,4210.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+152,C1G0003,2004-09-20,IN_TEST,12,430.0,48.0,77.5,Ambien 5mg,4103.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+153,C1G0003,2004-09-21,IN_TEST,13,460.0,18.0,75.0,Ambien 5mg,4268.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+154,C1G0003,2004-09-22,IN_TEST,14,460.0,18.0,70.4,,4105.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+155,C1G0003,2004-09-23,IN_TEST,15,460.0,18.0,79.2,Diphenhydramine 50mg,4271.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+156,C1G0003,2004-09-24,IN_TEST,16,446.0,32.0,72.5,Diphenhydramine 50mg,4107.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+157,C1G0003,2004-09-25,IN_TEST,17,450.0,28.0,75.8,Diphenhydramine 50mg,4273.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+158,C1G0003,2004-09-26,IN_TEST,18,462.0,16.0,83.8,Diphenhydramine 50mg,4109.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+159,C1G0003,2004-09-27,IN_TEST,19,394.0,62.0,70.0,Diphenhydramine 50mg,4275.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+160,C1G0003,2004-09-28,IN_TEST,20,408.0,70.0,64.6,,4112.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+161,C1G0003,2004-09-29,IN_TEST,21,454.0,24.0,85.4,Diphenhydramine 50mg,4277.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+162,C1G0003,2004-09-30,IN_TEST,22,414.0,40.0,81.7,Diphenhydramine 50mg,4114.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+163,C1G0003,2004-10-01,IN_TEST,23,450.0,28.0,93.3,Diphenhydramine 50mg,4279.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+164,C1G0003,2004-10-02,IN_TEST,24,456.0,22.0,90.8,Diphenhydramine 25mg,4116.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+165,C1G0003,2004-10-03,IN_TEST,25,428.0,50.0,84.6,,4281.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+166,C1G0003,2004-10-04,IN_TEST,26,412.0,66.0,74.6,Ambien 5mg,4047.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+167,C1G0003,2004-10-05,IN_TEST,27,440.0,38.0,86.7,,4283.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+168,C1G0003,2004-10-06,IN_TEST,28,444.0,24.0,86.3,,4049.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+169,C1G0003,2004-10-07,IN_TEST,29,410.0,68.0,77.9,,4285.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+170,C1G0003,2004-10-08,IN_TEST,30,448.0,30.0,87.9,Diphenhydramine 25mg,4122.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+171,C1G0003,2004-10-09,IN_TEST,31,458.0,20.0,85.0,,4287.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+172,C1G0003,2004-10-10,IN_TEST,32,442.0,30.0,82.9,Diphenhydramine 25mg,4124.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+173,C1G0003,2004-10-11,IN_TEST,33,446.0,32.0,87.5,Diphenhydramine 25mg,4289.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+174,C1G0003,2004-10-12,IN_TEST,34,434.0,38.0,82.9,,4126.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+175,C1G0003,2004-10-13,IN_TEST,35,456.0,22.0,86.7,Diphenhydramine 25mg,4291.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+176,C1G0003,2004-10-14,IN_TEST,36,406.0,72.0,75.4,,4136.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+177,C1G0003,2004-10-15,IN_TEST,37,444.0,34.0,84.6,,4293.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+178,C1G0003,2004-10-16,IN_TEST,38,434.0,44.0,82.5,,4140.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+179,C1G0003,2004-10-17,IN_TEST,39,458.0,20.0,85.4,,4295.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+180,C1G0003,2004-10-18,IN_TEST,40,430.0,42.0,81.3,,4144.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+181,C1G0003,2004-10-19,IN_TEST,41,404.0,72.0,70.8,,4298.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+182,C1G0003,2004-10-20,IN_TEST,42,444.0,34.0,82.1,Diphenhydramine 50mg,4148.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+183,C1G0003,2004-10-21,IN_TEST,43,402.0,76.0,77.1,Ambien 5mg,4300.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+184,C1G0003,2004-10-22,IN_TEST,44,440.0,30.0,83.3,,4151.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+185,C1G0003,2004-10-23,IN_TEST,45,428.0,50.0,77.1,,4302.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+186,C1G0003,2004-10-24,IN_TEST,46,436.0,42.0,80.0,,4154.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+187,C1G0003,2004-10-25,IN_TEST,47,436.0,42.0,77.5,,4304.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+188,C1G0003,2004-10-26,IN_TEST,48,442.0,30.0,82.9,,4157.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+189,C1G0003,2004-10-27,IN_TEST,49,430.0,48.0,82.1,,4306.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+190,C1G0003,2004-10-28,IN_TEST,50,432.0,46.0,80.8,,4159.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+191,C1G0003,2004-10-29,IN_TEST,51,448.0,26.0,83.3,,4308.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+192,C1G0003,2004-10-30,IN_TEST,52,454.0,24.0,85.4,,4163.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+193,C1G0003,2004-10-31,IN_TEST,53,376.0,96.0,71.3,,4310.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+194,C1G0003,2004-11-01,IN_TEST,54,376.0,102.0,65.8,,4168.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+195,C1G0003,2004-11-02,IN_TEST,55,352.0,126.0,64.6,,4312.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+196,C1G0003,2004-11-03,IN_TEST,56,312.0,166.0,58.8,,4171.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+197,C1G0003,2004-11-04,IN_TEST,57,354.0,120.0,65.4,,4314.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+198,C1G0003,2004-11-05,IN_TEST,58,394.0,84.0,75.8,,4175.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+199,C1G0003,2004-11-06,IN_TEST,59,398.0,74.0,75.8,,4316.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+200,C1G0003,2004-11-07,IN_TEST,60,448.0,30.0,82.5,,4177.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+201,C1G0003,2004-11-08,POST_TEST,0,478.0,0.0,85.4,,4318.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+202,C1G0003,2004-11-09,POST_TEST,1,456.0,22.0,81.3,,4084.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+203,C1G0003,2004-11-10,POST_TEST,2,430.0,38.0,80.8,,4320.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+204,C1G0003,2004-11-11,POST_TEST,3,424.0,54.0,76.3,,4086.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+205,C1G0003,2004-11-12,POST_TEST,4,466.0,12.0,86.7,,4322.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+206,C1G0003,2004-11-13,POST_TEST,5,400.0,78.0,77.5,,4088.0,False,BRSMACT_Campagin_1_Actigraphy.csv
+207,C1G0003,2004-11-14,POST_TEST,6,444.0,18.0,85.4,,4324.0,False,BRSMACT_Campagin_1_Actigraphy.csv

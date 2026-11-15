@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ..
+      dockerfile: infrastructure/docker/backend.Dockerfile
+    image: ojas-api:local
+    container_name: ojas-backend
+    ports:
+      - "8000:8080"
+    environment:
+      - PORT=8080
+      - ENVIRONMENT=development
+      - DEBUG=True
+      - DATABASE_URL=sqlite:////app/data/runtime/ojas.db
+      - CORS_ORIGINS=http://localhost:5173,http://localhost:3000,http://127.0.0.1:5173,http://127.0.0.1:3000
+      - MIN_READINGS_FOR_BASELINE=5
+      - MIN_READINGS_FOR_ML_ANOMALY=20
+      - ALERT_DEDUPLICATION_WINDOW_MINUTES=30
+    volumes:
+      # Mount runtime data directory for persistent local testing
+      - ojas-backend-data:/app/data/runtime
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+    networks:
+      - ojas-network
+
+  frontend:
+    build:
+      context: ..
+      dockerfile: infrastructure/docker/frontend.Dockerfile
+      args:
+        - VITE_API_BASE_URL=http://localhost:8000
+    image: ojas-frontend:local
+    container_name: ojas-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    restart: unless-stopped
+    networks:
+      - ojas-network
+
+networks:
+  ojas-network:
+    driver: bridge
+
+volumes:
+  ojas-backend-data:
+    driver: local

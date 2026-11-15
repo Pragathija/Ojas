@@ -1,0 +1,1178 @@
+{
+  "dataset_id": "nasa_brsmact",
+  "experiment_id": "BRSMAct",
+  "study_title": "UTMB Bedrest Campaign 1 Actigraphy",
+  "data_processing_level": "PROCESSED_SUMMARY",
+  "total_observations": 207,
+  "cohort_subjects": [
+    "C1G0001",
+    "C1G0002",
+    "C1G0003"
+  ],
+  "phase_comparison": {
+    "PRE_TEST": {
+      "phase_name": "PRE_TEST",
+      "total_scheduled_days": 6,
+      "valid_observations": 2,
+      "missing_observations": 4,
+      "missing_rate_pct": 66.67,
+      "duration_mean_minutes": 467.0,
+      "duration_std_minutes": 4.24,
+      "duration_median_minutes": 467.0,
+      "duration_min_minutes": 464.0,
+      "duration_max_minutes": 470.0,
+      "latency_mean_minutes": 10.0,
+      "latency_std_minutes": 5.66,
+      "latency_median_minutes": 10.0,
+      "latency_min_minutes": 6.0,
+      "latency_max_minutes": 14.0,
+      "efficiency_mean_pct": 93.95,
+      "efficiency_std_pct": 2.62,
+      "efficiency_median_pct": 93.95,
+      "efficiency_min_pct": 92.1,
+      "efficiency_max_pct": 95.8
+    },
+    "IN_TEST": {
+      "phase_name": "IN_TEST",
+      "total_scheduled_days": 180,
+      "valid_observations": 167,
+      "missing_observations": 13,
+      "missing_rate_pct": 7.22,
+      "duration_mean_minutes": 431.88,
+      "duration_std_minutes": 31.59,
+      "duration_median_minutes": 442.0,
+      "duration_min_minutes": 302.0,
+      "duration_max_minutes": 474.0,
+      "latency_mean_minutes": 42.75,
+      "latency_std_minutes": 31.86,
+      "latency_median_minutes": 34.0,
+      "latency_min_minutes": 0.0,
+      "latency_max_minutes": 176.0,
+      "efficiency_mean_pct": 81.65,
+      "efficiency_std_pct": 8.47,
+      "efficiency_median_pct": 82.9,
+      "efficiency_min_pct": 52.5,
+      "efficiency_max_pct": 96.7
+    },
+    "POST_TEST": {
+      "phase_name": "POST_TEST",
+      "total_scheduled_days": 21,
+      "valid_observations": 21,
+      "missing_observations": 0,
+      "missing_rate_pct": 0.0,
+      "duration_mean_minutes": 444.0,
+      "duration_std_minutes": 24.18,
+      "duration_median_minutes": 448.0,
+      "duration_min_minutes": 370.0,
+      "duration_max_minutes": 478.0,
+      "latency_mean_minutes": 32.57,
+      "latency_std_minutes": 24.25,
+      "latency_median_minutes": 28.0,
+      "latency_min_minutes": 0.0,
+      "latency_max_minutes": 108.0,
+      "efficiency_mean_pct": 83.26,
+      "efficiency_std_pct": 5.79,
+      "efficiency_median_pct": 83.8,
+      "efficiency_min_pct": 70.8,
+      "efficiency_max_pct": 90.8
+    }
+  },
+  "subject_summaries": {
+    "C1G0001": {
+      "subject_id": "C1G0001",
+      "total_days": 69,
+      "valid_days": 69,
+      "missing_days": 0,
+      "medication_days": 1,
+      "phases": {
+        "PRE_TEST": {
+          "phase_name": "PRE_TEST",
+          "total_scheduled_days": 2,
+          "valid_observations": 2,
+          "missing_observations": 0,
+          "missing_rate_pct": 0.0,
+          "duration_mean_minutes": 467.0,
+          "duration_std_minutes": 4.24,
+          "duration_median_minutes": 467.0,
+          "duration_min_minutes": 464.0,
+          "duration_max_minutes": 470.0,
+          "latency_mean_minutes": 10.0,
+          "latency_std_minutes": 5.66,
+          "latency_median_minutes": 10.0,
+          "latency_min_minutes": 6.0,
+          "latency_max_minutes": 14.0,
+          "efficiency_mean_pct": 93.95,
+          "efficiency_std_pct": 2.62,
+          "efficiency_median_pct": 93.95,
+          "efficiency_min_pct": 92.1,
+          "efficiency_max_pct": 95.8
+        },
+        "IN_TEST": {
+          "phase_name": "IN_TEST",
+          "total_scheduled_days": 60,
+          "valid_observations": 60,
+          "missing_observations": 0,
+          "missing_rate_pct": 0.0,
+          "duration_mean_minutes": 433.63,
+          "duration_std_minutes": 33.75,
+          "duration_median_minutes": 443.0,
+          "duration_min_minutes": 302.0,
+          "duration_max_minutes": 472.0,
+          "latency_mean_minutes": 42.87,
+          "latency_std_minutes": 34.65,
+          "latency_median_minutes": 35.0,
+          "latency_min_minutes": 0.0,
+          "latency_max_minutes": 176.0,
+          "efficiency_mean_pct": 87.94,
+          "efficiency_std_pct": 6.99,
+          "efficiency_median_pct": 90.0,
+          "efficiency_min_pct": 62.5,
+          "efficiency_max_pct": 96.7
+        },
+        "POST_TEST": {
+          "phase_name": "POST_TEST",
+          "total_scheduled_days": 7,
+          "valid_observations": 7,
+          "missing_observations": 0,
+          "missing_rate_pct": 0.0,
+          "duration_mean_minutes": 454.86,
+          "duration_std_minutes": 12.48,
+          "duration_median_minutes": 456.0,
+          "duration_min_minutes": 438.0,
+          "duration_max_minutes": 478.0,
+          "latency_mean_minutes": 23.14,
+          "latency_std_minutes": 12.48,
+          "latency_median_minutes": 22.0,
+          "latency_min_minutes": 0.0,
+          "latency_max_minutes": 40.0,
+          "efficiency_mean_pct": 89.23,
+          "efficiency_std_pct": 1.46,
+          "efficiency_median_pct": 89.2,
+          "efficiency_min_pct": 87.1,
+          "efficiency_max_pct": 90.8
+        }
+      },
+      "overall_mean_duration_minutes": 436.75,
+      "overall_mean_efficiency_pct": 88.24
+    },
+    "C1G0002": {
+      "subject_id": "C1G0002",
+      "total_days": 69,
+      "valid_days": 62,
+      "missing_days": 7,
+      "medication_days": 21,
+      "phases": {
+        "PRE_TEST": {
+          "phase_name": "PRE_TEST",
+          "total_scheduled_days": 2,
+          "valid_observations": 0,
+          "missing_observations": 2,
+          "missing_rate_pct": 100.0,
+          "duration_mean_minutes": null,
+          "duration_std_minutes": null,
+          "duration_median_minutes": null,
+          "duration_min_minutes": null,
+          "duration_max_minutes": null,
+          "latency_mean_minutes": null,
+          "latency_std_minutes": null,
+          "latency_median_minutes": null,
+          "latency_min_minutes": null,
+          "latency_max_minutes": null,
+          "efficiency_mean_pct": null,
+          "efficiency_std_pct": null,
+          "efficiency_median_pct": null,
+          "efficiency_min_pct": null,
+          "efficiency_max_pct": null
+        },
+        "IN_TEST": {
+          "phase_name": "IN_TEST",
+          "total_scheduled_days": 60,
+          "valid_observations": 55,
+          "missing_observations": 5,
+          "missing_rate_pct": 8.33,
+          "duration_mean_minutes": 432.8,
+          "duration_std_minutes": 29.23,
+          "duration_median_minutes": 440.0,
+          "duration_min_minutes": 338.0,
+          "duration_max_minutes": 474.0,
+          "latency_mean_minutes": 38.76,
+          "latency_std_minutes": 29.03,
+          "latency_median_minutes": 30.0,
+          "latency_min_minutes": 0.0,
+          "latency_max_minutes": 140.0,
+          "efficiency_mean_pct": 77.15,
+          "efficiency_std_pct": 6.79,
+          "efficiency_median_pct": 78.8,
+          "efficiency_min_pct": 52.5,
+          "efficiency_max_pct": 87.1
+        },
+        "POST_TEST": {
+          "phase_name": "POST_TEST",
+          "total_scheduled_days": 7,
+          "valid_observations": 7,
+          "missing_observations": 0,
+          "missing_rate_pct": 0.0,
+          "duration_mean_minutes": 434.57,
+          "duration_std_minutes": 28.86,
+          "duration_median_minutes": 446.0,
+          "duration_min_minutes": 370.0,
+          "duration_max_minutes": 450.0,
+          "latency_mean_minutes": 42.86,
+          "latency_std_minutes": 29.16,
+          "latency_median_minutes": 30.0,
+          "latency_min_minutes": 28.0,
+          "latency_max_minutes": 108.0,
+          "efficiency_mean_pct": 78.64,
+          "efficiency_std_pct": 4.94,
+          "efficiency_median_pct": 79.2,
+          "efficiency_min_pct": 70.8,
+          "efficiency_max_pct": 83.8
+        }
+      },
+      "overall_mean_duration_minutes": 433.0,
+      "overall_mean_efficiency_pct": 77.32
+    },
+    "C1G0003": {
+      "subject_id": "C1G0003",
+      "total_days": 69,
+      "valid_days": 59,
+      "missing_days": 10,
+      "medication_days": 23,
+      "phases": {
+        "PRE_TEST": {
+          "phase_name": "PRE_TEST",
+          "total_scheduled_days": 2,
+          "valid_observations": 0,
+          "missing_observations": 2,
+          "missing_rate_pct": 100.0,
+          "duration_mean_minutes": null,
+          "duration_std_minutes": null,
+          "duration_median_minutes": null,
+          "duration_min_minutes": null,
+          "duration_max_minutes": null,
+          "latency_mean_minutes": null,
+          "latency_std_minutes": null,
+          "latency_median_minutes": null,
+          "latency_min_minutes": null,
+          "latency_max_minutes": null,
+          "efficiency_mean_pct": null,
+          "efficiency_std_pct": null,
+          "efficiency_median_pct": null,
+          "efficiency_min_pct": null,
+          "efficiency_max_pct": null
+        },
+        "IN_TEST": {
+          "phase_name": "IN_TEST",
+          "total_scheduled_days": 60,
+          "valid_observations": 52,
+          "missing_observations": 8,
+          "missing_rate_pct": 13.33,
+          "duration_mean_minutes": 428.88,
+          "duration_std_minutes": 31.83,
+          "duration_median_minutes": 440.0,
+          "duration_min_minutes": 312.0,
+          "duration_max_minutes": 462.0,
+          "latency_mean_minutes": 46.85,
+          "latency_std_minutes": 31.44,
+          "latency_median_minutes": 36.0,
+          "latency_min_minutes": 16.0,
+          "latency_max_minutes": 166.0,
+          "efficiency_mean_pct": 79.16,
+          "efficiency_std_pct": 7.31,
+          "efficiency_median_pct": 81.05,
+          "efficiency_min_pct": 58.8,
+          "efficiency_max_pct": 93.3
+        },
+        "POST_TEST": {
+          "phase_name": "POST_TEST",
+          "total_scheduled_days": 7,
+          "valid_observations": 7,
+          "missing_observations": 0,
+          "missing_rate_pct": 0.0,
+          "duration_mean_minutes": 442.57,
+          "duration_std_minutes": 26.78,
+          "duration_median_minutes": 444.0,
+          "duration_min_minutes": 400.0,
+          "duration_max_minutes": 478.0,
+          "latency_mean_minutes": 31.71,
+          "latency_std_minutes": 26.94,
+          "latency_median_minutes": 22.0,
+          "latency_min_minutes": 0.0,
+          "latency_max_minutes": 78.0,
+          "efficiency_mean_pct": 81.91,
+          "efficiency_std_pct": 4.08,
+          "efficiency_median_pct": 81.3,
+          "efficiency_min_pct": 76.3,
+          "efficiency_max_pct": 86.7
+        }
+      },
+      "overall_mean_duration_minutes": 430.51,
+      "overall_mean_efficiency_pct": 79.49
+    }
+  },
+  "missing_data_audit": {
+    "total_records": 207,
+    "total_missing_records": 17,
+    "overall_missing_pct": 8.21,
+    "missing_by_subject": {
+      "C1G0002": 7,
+      "C1G0003": 10
+    },
+    "missing_by_phase": {
+      "PRE_TEST": 4,
+      "IN_TEST": 13
+    },
+    "missing_dates_per_subject": {
+      "C1G0002": [
+        "2004-09-07",
+        "2004-09-08",
+        "2004-09-09",
+        "2004-10-04",
+        "2004-10-05",
+        "2004-10-06",
+        "2004-10-07"
+      ],
+      "C1G0003": [
+        "2004-09-07",
+        "2004-09-08",
+        "2004-09-09",
+        "2004-09-10",
+        "2004-09-11",
+        "2004-09-12",
+        "2004-09-13",
+        "2004-09-14",
+        "2004-09-15",
+        "2004-09-16"
+      ]
+    }
+  },
+  "in_test_trajectory": [
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 1,
+      "calendar_dates": [
+        "2004-09-09"
+      ],
+      "subject_count": 3,
+      "valid_count": 1,
+      "mean_duration_minutes": 472.0,
+      "mean_efficiency_pct": 90.8,
+      "mean_latency_minutes": 0.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 2,
+      "calendar_dates": [
+        "2004-09-10"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 459.0,
+      "mean_efficiency_pct": 85.45,
+      "mean_latency_minutes": 8.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 3,
+      "calendar_dates": [
+        "2004-09-11"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 451.0,
+      "mean_efficiency_pct": 88.55,
+      "mean_latency_minutes": 20.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 4,
+      "calendar_dates": [
+        "2004-09-12"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 461.0,
+      "mean_efficiency_pct": 84.8,
+      "mean_latency_minutes": 11.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 5,
+      "calendar_dates": [
+        "2004-09-13"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 448.0,
+      "mean_efficiency_pct": 85.65,
+      "mean_latency_minutes": 7.0,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 6,
+      "calendar_dates": [
+        "2004-09-14"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 409.0,
+      "mean_efficiency_pct": 73.15,
+      "mean_latency_minutes": 61.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 7,
+      "calendar_dates": [
+        "2004-09-15"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 467.0,
+      "mean_efficiency_pct": 90.0,
+      "mean_latency_minutes": 9.0,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 8,
+      "calendar_dates": [
+        "2004-09-16"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 442.0,
+      "mean_efficiency_pct": 85.0,
+      "mean_latency_minutes": 22.0,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 9,
+      "calendar_dates": [
+        "2004-09-17"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 454.67,
+      "mean_efficiency_pct": 83.37,
+      "mean_latency_minutes": 20.67,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 10,
+      "calendar_dates": [
+        "2004-09-18"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 449.33,
+      "mean_efficiency_pct": 83.77,
+      "mean_latency_minutes": 28.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 11,
+      "calendar_dates": [
+        "2004-09-19"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 442.67,
+      "mean_efficiency_pct": 81.97,
+      "mean_latency_minutes": 32.0,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 12,
+      "calendar_dates": [
+        "2004-09-20"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 423.33,
+      "mean_efficiency_pct": 78.47,
+      "mean_latency_minutes": 54.67,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 13,
+      "calendar_dates": [
+        "2004-09-21"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 455.33,
+      "mean_efficiency_pct": 80.4,
+      "mean_latency_minutes": 22.67,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 14,
+      "calendar_dates": [
+        "2004-09-22"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 441.33,
+      "mean_efficiency_pct": 77.23,
+      "mean_latency_minutes": 36.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 15,
+      "calendar_dates": [
+        "2004-09-23"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 450.67,
+      "mean_efficiency_pct": 84.3,
+      "mean_latency_minutes": 27.33,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 16,
+      "calendar_dates": [
+        "2004-09-24"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 454.0,
+      "mean_efficiency_pct": 82.37,
+      "mean_latency_minutes": 24.0,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 17,
+      "calendar_dates": [
+        "2004-09-25"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 456.67,
+      "mean_efficiency_pct": 83.87,
+      "mean_latency_minutes": 21.33,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 18,
+      "calendar_dates": [
+        "2004-09-26"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 448.0,
+      "mean_efficiency_pct": 82.8,
+      "mean_latency_minutes": 28.67,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 19,
+      "calendar_dates": [
+        "2004-09-27"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 428.67,
+      "mean_efficiency_pct": 81.83,
+      "mean_latency_minutes": 42.0,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 20,
+      "calendar_dates": [
+        "2004-09-28"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 414.67,
+      "mean_efficiency_pct": 74.87,
+      "mean_latency_minutes": 48.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 21,
+      "calendar_dates": [
+        "2004-09-29"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 455.33,
+      "mean_efficiency_pct": 86.93,
+      "mean_latency_minutes": 22.67,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 22,
+      "calendar_dates": [
+        "2004-09-30"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 416.0,
+      "mean_efficiency_pct": 78.07,
+      "mean_latency_minutes": 54.0,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 23,
+      "calendar_dates": [
+        "2004-10-01"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 454.67,
+      "mean_efficiency_pct": 90.27,
+      "mean_latency_minutes": 18.67,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 24,
+      "calendar_dates": [
+        "2004-10-02"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 455.33,
+      "mean_efficiency_pct": 88.6,
+      "mean_latency_minutes": 22.67,
+      "reported_medications": [
+        "Diphenhydramine 25mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 25,
+      "calendar_dates": [
+        "2004-10-03"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 446.0,
+      "mean_efficiency_pct": 84.03,
+      "mean_latency_minutes": 32.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 26,
+      "calendar_dates": [
+        "2004-10-04"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 421.0,
+      "mean_efficiency_pct": 80.2,
+      "mean_latency_minutes": 51.0,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 27,
+      "calendar_dates": [
+        "2004-10-05"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 442.0,
+      "mean_efficiency_pct": 86.9,
+      "mean_latency_minutes": 36.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 28,
+      "calendar_dates": [
+        "2004-10-06"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 442.0,
+      "mean_efficiency_pct": 87.95,
+      "mean_latency_minutes": 31.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 29,
+      "calendar_dates": [
+        "2004-10-07"
+      ],
+      "subject_count": 3,
+      "valid_count": 2,
+      "mean_duration_minutes": 431.0,
+      "mean_efficiency_pct": 85.2,
+      "mean_latency_minutes": 47.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 30,
+      "calendar_dates": [
+        "2004-10-08"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 438.67,
+      "mean_efficiency_pct": 85.83,
+      "mean_latency_minutes": 38.0,
+      "reported_medications": [
+        "Diphenhydramine 25mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 31,
+      "calendar_dates": [
+        "2004-10-09"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 428.67,
+      "mean_efficiency_pct": 82.1,
+      "mean_latency_minutes": 39.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 32,
+      "calendar_dates": [
+        "2004-10-10"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 437.33,
+      "mean_efficiency_pct": 85.3,
+      "mean_latency_minutes": 30.67,
+      "reported_medications": [
+        "Diphenhydramine 25mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 33,
+      "calendar_dates": [
+        "2004-10-11"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 430.0,
+      "mean_efficiency_pct": 83.9,
+      "mean_latency_minutes": 48.0,
+      "reported_medications": [
+        "Diphenhydramine 25mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 34,
+      "calendar_dates": [
+        "2004-10-12"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 442.67,
+      "mean_efficiency_pct": 81.8,
+      "mean_latency_minutes": 31.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 35,
+      "calendar_dates": [
+        "2004-10-13"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 441.33,
+      "mean_efficiency_pct": 84.33,
+      "mean_latency_minutes": 36.0,
+      "reported_medications": [
+        "Diphenhydramine 25mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 36,
+      "calendar_dates": [
+        "2004-10-14"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 416.67,
+      "mean_efficiency_pct": 76.27,
+      "mean_latency_minutes": 56.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 37,
+      "calendar_dates": [
+        "2004-10-15"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 446.67,
+      "mean_efficiency_pct": 85.87,
+      "mean_latency_minutes": 31.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 38,
+      "calendar_dates": [
+        "2004-10-16"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 447.33,
+      "mean_efficiency_pct": 84.87,
+      "mean_latency_minutes": 30.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 39,
+      "calendar_dates": [
+        "2004-10-17"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 449.33,
+      "mean_efficiency_pct": 83.47,
+      "mean_latency_minutes": 28.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 40,
+      "calendar_dates": [
+        "2004-10-18"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 418.67,
+      "mean_efficiency_pct": 79.17,
+      "mean_latency_minutes": 57.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 41,
+      "calendar_dates": [
+        "2004-10-19"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 392.67,
+      "mean_efficiency_pct": 74.3,
+      "mean_latency_minutes": 84.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 42,
+      "calendar_dates": [
+        "2004-10-20"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 446.0,
+      "mean_efficiency_pct": 83.9,
+      "mean_latency_minutes": 32.0,
+      "reported_medications": [
+        "Diphenhydramine 50mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 43,
+      "calendar_dates": [
+        "2004-10-21"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 423.33,
+      "mean_efficiency_pct": 81.1,
+      "mean_latency_minutes": 50.67,
+      "reported_medications": [
+        "Ambien 5mg"
+      ]
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 44,
+      "calendar_dates": [
+        "2004-10-22"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 436.67,
+      "mean_efficiency_pct": 83.6,
+      "mean_latency_minutes": 35.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 45,
+      "calendar_dates": [
+        "2004-10-23"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 439.33,
+      "mean_efficiency_pct": 83.2,
+      "mean_latency_minutes": 37.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 46,
+      "calendar_dates": [
+        "2004-10-24"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 446.67,
+      "mean_efficiency_pct": 84.33,
+      "mean_latency_minutes": 31.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 47,
+      "calendar_dates": [
+        "2004-10-25"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 432.67,
+      "mean_efficiency_pct": 82.5,
+      "mean_latency_minutes": 45.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 48,
+      "calendar_dates": [
+        "2004-10-26"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 444.67,
+      "mean_efficiency_pct": 84.87,
+      "mean_latency_minutes": 31.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 49,
+      "calendar_dates": [
+        "2004-10-27"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 422.67,
+      "mean_efficiency_pct": 82.5,
+      "mean_latency_minutes": 51.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 50,
+      "calendar_dates": [
+        "2004-10-28"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 432.67,
+      "mean_efficiency_pct": 83.03,
+      "mean_latency_minutes": 40.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 51,
+      "calendar_dates": [
+        "2004-10-29"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 446.67,
+      "mean_efficiency_pct": 85.7,
+      "mean_latency_minutes": 27.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 52,
+      "calendar_dates": [
+        "2004-10-30"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 457.33,
+      "mean_efficiency_pct": 84.43,
+      "mean_latency_minutes": 14.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 53,
+      "calendar_dates": [
+        "2004-10-31"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 362.0,
+      "mean_efficiency_pct": 67.93,
+      "mean_latency_minutes": 111.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 54,
+      "calendar_dates": [
+        "2004-11-01"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 360.67,
+      "mean_efficiency_pct": 66.93,
+      "mean_latency_minutes": 110.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 55,
+      "calendar_dates": [
+        "2004-11-02"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 352.67,
+      "mean_efficiency_pct": 68.2,
+      "mean_latency_minutes": 125.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 56,
+      "calendar_dates": [
+        "2004-11-03"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 358.67,
+      "mean_efficiency_pct": 68.77,
+      "mean_latency_minutes": 119.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 57,
+      "calendar_dates": [
+        "2004-11-04"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 366.67,
+      "mean_efficiency_pct": 68.47,
+      "mean_latency_minutes": 110.0,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 58,
+      "calendar_dates": [
+        "2004-11-05"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 412.67,
+      "mean_efficiency_pct": 79.43,
+      "mean_latency_minutes": 57.33,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 59,
+      "calendar_dates": [
+        "2004-11-06"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 405.33,
+      "mean_efficiency_pct": 77.1,
+      "mean_latency_minutes": 70.67,
+      "reported_medications": []
+    },
+    {
+      "test_phase": "IN_TEST",
+      "br_day": 60,
+      "calendar_dates": [
+        "2004-11-07"
+      ],
+      "subject_count": 3,
+      "valid_count": 3,
+      "mean_duration_minutes": 451.33,
+      "mean_efficiency_pct": 86.8,
+      "mean_latency_minutes": 26.67,
+      "reported_medications": []
+    }
+  ],
+  "scientific_limitations": "CRITICAL SCIENTIFIC DISCLAIMER: This dataset contains ground-based bed rest analog data from exactly 3 human subjects simulating microgravity fluid shifts and horizontal confinement. It does NOT contain in-flight spaceflight telemetry (e.g. ISS astronaut data) and does NOT contain raw second-by-second accelerometer streams or radiation exposure. It MUST NOT be used to train general astronaut diagnostic models or replace live telemetry baselines."
+}

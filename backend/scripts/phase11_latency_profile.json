@@ -1,0 +1,84 @@
+{
+  "profiling_timestamp": "2026-11-15T09:56:30.432775+00:00",
+  "iterations": 100,
+  "components": {
+    "ml_anomaly_cold_start": {
+      "mean_ms": 99.089,
+      "std_ms": 39.02,
+      "min_ms": 47.687,
+      "p50_ms": 82.543,
+      "p95_ms": 156.925,
+      "p99_ms": 180.661,
+      "max_ms": 186.594,
+      "samples": 20
+    },
+    "ml_anomaly_warm_cache": {
+      "mean_ms": 6.988,
+      "std_ms": 2.565,
+      "min_ms": 4.883,
+      "p50_ms": 6.293,
+      "p95_ms": 12.01,
+      "p99_ms": 16.806,
+      "max_ms": 23.691,
+      "samples": 100
+    },
+    "quality_gateway": {
+      "mean_ms": 0.836,
+      "std_ms": 0.603,
+      "min_ms": 0.581,
+      "p50_ms": 0.749,
+      "p95_ms": 1.09,
+      "p99_ms": 1.261,
+      "max_ms": 6.658,
+      "samples": 100
+    },
+    "risk_rules_evaluation": {
+      "mean_ms": 0.011,
+      "std_ms": 0.007,
+      "min_ms": 0.006,
+      "p50_ms": 0.01,
+      "p95_ms": 0.015,
+      "p99_ms": 0.043,
+      "max_ms": 0.06,
+      "samples": 100
+    },
+    "temporal_trajectory_analysis": {
+      "mean_ms": 0.325,
+      "std_ms": 0.408,
+      "min_ms": 0.203,
+      "p50_ms": 0.229,
+      "p95_ms": 0.496,
+      "p99_ms": 0.626,
+      "max_ms": 4.278,
+      "samples": 100
+    },
+    "baseline_calculation": {
+      "mean_ms": 1.367,
+      "std_ms": 0.278,
+      "min_ms": 1.056,
+      "p50_ms": 1.288,
+      "p95_ms": 1.818,
+      "p99_ms": 2.165,
+      "max_ms": 2.987,
+      "samples": 100
+    },
+    "end_to_end_pipeline": {
+      "mean_ms": 28.062,
+      "std_ms": 18.96,
+      "min_ms": 15.584,
+      "p50_ms": 23.408,
+      "p95_ms": 69.057,
+      "p99_ms": 95.388,
+      "max_ms": 152.208,
+      "samples": 100
+    }
+  },
+  "tail_latency_root_cause_analysis": {
+    "root_cause": "Full IsolationForest ensemble re-fitting (75 trees) on every single packet when history >= 20",
+    "cold_fit_mean_ms": 99.089,
+    "warm_inference_mean_ms": 6.988,
+    "speedup_factor": 14.2,
+    "remediation": "Warm model caching with periodic incremental re-fitting (refresh interval: 15 samples)",
+    "p95_reduction_pct": 92.3
+  }
+}

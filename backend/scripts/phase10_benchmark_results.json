@@ -1,0 +1,110 @@
+{
+  "environment": {
+    "os": "Windows 11 (10.0.26300)",
+    "python_version": "3.12.14",
+    "architecture": "AMD64",
+    "processor": "AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD",
+    "database": "SQLite In-Memory (Thread-Safe Isolation) / PostgreSQL Schema Ready",
+    "timestamp": "2026-11-15T09:03:16.354986+00:00",
+    "external_services": "SIMULATED_MISSION_CONTROL_CONSOLE (No unapproved cloud calls)"
+  },
+  "metrics": {
+    "gateway_validation": {
+      "count": 500,
+      "mean_ms": 0.16,
+      "p50_ms": 0.155,
+      "p95_ms": 0.193,
+      "p99_ms": 0.247,
+      "min_ms": 0.137,
+      "max_ms": 0.3,
+      "throughput_pkts_per_sec": 6214.6,
+      "error_rate_pct": 0.0
+    },
+    "persistent_idempotency": {
+      "count": 150,
+      "mean_ms": 0.496,
+      "p50_ms": 0.476,
+      "p95_ms": 0.629,
+      "p99_ms": 0.682,
+      "min_ms": 0.431,
+      "max_ms": 0.706,
+      "insert_throughput_pkts_per_sec": 484.3,
+      "duplicate_check_throughput_pkts_per_sec": 1999.8,
+      "duplicate_prevention_rate_pct": 100.0
+    },
+    "database_writes": {
+      "count": 150,
+      "mean_ms": 0.575,
+      "p50_ms": 0.543,
+      "p95_ms": 0.686,
+      "p99_ms": 0.719,
+      "min_ms": 0.513,
+      "max_ms": 2.839,
+      "writes_per_sec": 1731.7
+    },
+    "deterministic_rule_evaluation": {
+      "count": 500,
+      "mean_ms": 0.05,
+      "p50_ms": 0.049,
+      "p95_ms": 0.054,
+      "p99_ms": 0.075,
+      "min_ms": 0.047,
+      "max_ms": 0.092,
+      "evaluations_per_sec": 18747.9
+    },
+    "full_ai_orchestration": {
+      "count": 30,
+      "mean_ms": 163.478,
+      "p50_ms": 21.435,
+      "p95_ms": 444.847,
+      "p99_ms": 450.656,
+      "min_ms": 7.563,
+      "max_ms": 452.746,
+      "pipeline_throughput_pkts_per_sec": 6.1,
+      "error_rate_pct": 0.0
+    },
+    "durable_outbox_creation": {
+      "count": 100,
+      "mean_ms": 0.796,
+      "p50_ms": 0.771,
+      "p95_ms": 0.882,
+      "p99_ms": 1.168,
+      "min_ms": 0.635,
+      "max_ms": 4.467,
+      "alerts_created_per_sec": 1249.1
+    },
+    "alert_confirmed_delivery": {
+      "count": 50,
+      "mean_ms": 1.397,
+      "p50_ms": 1.175,
+      "p95_ms": 1.65,
+      "p99_ms": 5.369,
+      "min_ms": 1.084,
+      "max_ms": 8.66,
+      "confirmed_deliveries_per_sec": 712.8
+    },
+    "concurrent_crew_ingestion": {
+      "count": 90,
+      "mean_ms": 61.411,
+      "p50_ms": 19.167,
+      "p95_ms": 330.056,
+      "p99_ms": 916.358,
+      "min_ms": 7.416,
+      "max_ms": 1138.825,
+      "crew_size": 6,
+      "concurrent_throughput_pkts_per_sec": 59.5,
+      "db_contention_errors": 0
+    },
+    "crash_recovery_and_replay": {
+      "recovered_count": 100,
+      "recovery_wall_time_ms": 151.052,
+      "recovery_throughput_events_per_sec": 662.0,
+      "mean_per_recovery_ms": 1.511
+    },
+    "memory_utilization": {
+      "current_allocated_mb": 4.638,
+      "peak_allocated_mb": 4.66
+    },
+    "total_benchmark_duration_ms": 7612.2
+  }
+}

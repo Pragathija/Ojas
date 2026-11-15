@@ -1,0 +1,57 @@
+# Git & repository metadata
+.git/
+.gitignore
+.gitattributes
+.github/
+
+# Virtual Environments & dependencies
+.venv/
+venv/
+ENV/
+env/
+node_modules/
+frontend/node_modules/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Test caches & coverage reports
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local databases & state
+*.db
+*.sqlite
+*.sqlite3
+backend/ojas.db
+test_ojas.db
+
+# Secrets & local environment files
+.env
+.env.*
+!.env.example
+*.local
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw / large research datasets
+backend/data/raw/
+*.pkl
+*.pickle
+*.mat
+*.h5
+*.hdf5
+*.edf
+*.parquet
+*.zip
+*.tar.gz
