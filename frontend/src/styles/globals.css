@@ -4,56 +4,183 @@
 
 @layer base {
   :root {
-    color-scheme: dark;
+    color-scheme: light;
+    --primary: #7656D9;
+    --primary-dark: #5535A5;
+    --primary-light: #E8E0FF;
+    --bg-ground: #F8F6FF;
+    --text-main: #252039;
+    --text-secondary: #716B83;
+    --border: #E9E4F2;
+    --mint: #9BDCC3;
+    --peach: #FFC98B;
+  }
+
+  html {
+    scroll-behavior: smooth;
   }
 
   body {
-    background-color: #08090B;
-    color: #F4F1EA;
-    font-family: 'Inter', sans-serif;
+    background-color: #F8F6FF;
+    color: #252039;
+    font-family: 'Book Antiqua', 'Book Antique', Palatino, 'Palatino Linotype', Georgia, serif;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Accessible focus states */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Book Antiqua', 'Book Antique', Palatino, 'Palatino Linotype', Georgia, serif;
+    color: #252039;
+    letter-spacing: -0.01em;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  /* Accessible focus states with brand purple */
   *:focus-visible {
-    outline: 2px solid #F07832;
+    outline: 2px solid #7656D9;
     outline-offset: 2px;
   }
 
-  /* Custom subtle scrollbar */
+  /* Custom subtle scrollbar with soft purple thumb */
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
   }
 
   ::-webkit-scrollbar-track {
-    background: #08090B;
+    background: #F8F6FF;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #30353A;
-    border-radius: 3px;
+    background: #D8D0EB;
+    border-radius: 4px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #70777D;
+    background: #B6A7DF;
   }
 }
 
 @layer utilities {
-  /* Subtle glass & border utilities without excessive glow */
+
+  /* High-Contrast Gradient Text */
+  .text-gradient-purple {
+    background: linear-gradient(135deg, #7656D9 0%, #5535A5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+  }
+
+  .text-gradient-space {
+    background: linear-gradient(135deg, #252039 0%, #5535A5 60%, #7656D9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline;
+  }
+
+  /* Premium Card & Surface Utilities */
   .cosmos-border {
-    border: 1px solid #30353A;
+    border: 1px solid #E9E4F2;
   }
 
   .cosmos-surface {
-    background-color: #191C20;
-    border: 1px solid #30353A;
+    background-color: #FFFFFF;
+    border: 1px solid #E9E4F2;
+    box-shadow: 0 2px 14px rgba(118, 86, 217, 0.05), 0 1px 3px rgba(85, 53, 165, 0.03);
   }
 
   .cosmos-surface-elevated {
-    background-color: #22262B;
-    border: 1px solid #30353A;
+    background-color: #FFFFFF;
+    border: 1px solid #E9E4F2;
+    box-shadow: 0 8px 30px -4px rgba(118, 86, 217, 0.09), 0 2px 10px -2px rgba(85, 53, 165, 0.04);
+  }
+
+  .purple-gradient {
+    background: linear-gradient(135deg, #7656D9 0%, #5535A5 100%);
+  }
+
+  .purple-subtle-gradient {
+    background: linear-gradient(135deg, #F8F6FF 0%, #E8E0FF 100%);
+  }
+
+  .space-card-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #FAF8FF 100%);
+  }
+
+  /* Floating and Orbiting Keyframe Animations */
+  @keyframes floatSlow {
+
+    0%,
+    100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+      transform: translateY(-14px) rotate(1.5deg);
+    }
+  }
+
+  @keyframes pulseStar {
+
+    0%,
+    100% {
+      opacity: 0.3;
+      transform: scale(0.85);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1.25);
+    }
+  }
+
+  @keyframes orbitDrift {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .animate-float {
+    animation: floatSlow 6s ease-in-out infinite;
+  }
+
+  .animate-star {
+    animation: pulseStar 3s ease-in-out infinite;
+  }
+
+  .animate-orbit {
+    animation: orbitDrift 45s linear infinite;
+  }
+
+  /* Respect prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+
+    .animate-float,
+    .animate-star,
+    .animate-orbit {
+      animation: none !important;
+    }
   }
 
   /* Tabular numbers for biometric & scientific values */

@@ -1,93 +1,88 @@
 import React from 'react';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
-import { Eye, LineChart, Sparkles } from 'lucide-react';
+import { Eye, LineChart, Sparkles, ShieldCheck, Trophy, Cpu } from 'lucide-react';
 
 const pillars = [
   {
     number: '01',
-    label: 'MONITOR',
+    label: 'INGEST & VERIFY',
     icon: Eye,
-    title: 'Continuous Observation',
-    subtitle: 'Multi-parameter bio-harness integration & vital telemetry stream',
+    title: 'Multi-Modal Ingestion & Safety Rules',
+    subtitle: 'Cryptographic device verification & deterministic non-suppression',
     description:
-      'Aggregates heart rate variability (RMSSD), continuous SpO2, core body temperature rhythm, and ambient environmental parameters into an integrated flight bio-telemetry picture.',
-    features: ['High-fidelity sensor streaming', 'Nominal baseline validation', 'Automated drift alerts'],
+      'Continuous ingestion of cardiovascular, respiratory, thermal, and circadian streams. Layer 1 deterministic safety rules unconditionally override statistical ML models for critical physiological events.',
+    features: ['Ed25519 device signatures', 'Persistent SQLite/Postgres idempotency', 'Critical alert non-suppression'],
   },
   {
     number: '02',
-    label: 'UNDERSTAND',
-    icon: LineChart,
-    title: 'Contextual Analytics',
-    subtitle: 'Historical longitudinal trends & NASA flight evidence cross-referencing',
+    label: 'ANALYZE & DETECT',
+    icon: Cpu,
+    title: 'Dual-Layer AI Anomaly Engine',
+    subtitle: 'Isolation Forest v2 with robust median/IQR normalization',
     description:
-      'Translates raw vital spikes into clinically meaningful context by mapping current telemetry against published spaceflight health literature, mission days, and countermeasure cycles.',
-    features: ['Circadian phase tracking', 'Countermeasure load analysis', 'Longitudinal drift modeling'],
+      'Distinguishes natural astronaut circadian variations from true physiological deterioration. Features evidence sufficiency scoring, temporal trajectory tracking, and Out-of-Distribution (OOD) novelty filters.',
+    features: ['Robust median/IQR scaling', 'Temporal deterioration engine', 'Explainable diagnostic factors'],
   },
   {
     number: '03',
-    label: 'ACT',
-    icon: Sparkles,
-    title: 'Adaptive Countermeasures',
-    subtitle: 'Targeted protocols for exercise, lighting, and rest recovery',
+    label: 'GROUND & GAMIFY',
+    icon: Trophy,
+    title: 'NASA Research & Habit Gamification',
+    subtitle: 'Authentic OSDR Inspiration4 & UTMB Bedrest actigraphy',
     description:
-      'Generates actionable recommendations—such as adjusting ARED resistive load, timing narrow-spectrum phototherapy, or rescheduling high-demand EVA operations based on physical readiness.',
-    features: ['Phototherapy scheduling', 'Exercise prescription tuning', 'Crew autonomy support'],
+      'Grounded in genuine spaceflight data from SpaceX Inspiration4 (OSD-575 / OSD-569) and UTMB Bedrest (BRSMAct). Features an ethical habit gamification system with XP and milestone badges for crew engagement.',
+    features: ['Longitudinal NASA spaceflight data', 'Engagement XP & badges', 'Never gamifies medical numbers'],
   },
 ];
 
 export const OjasApproach: React.FC = () => {
   return (
-    <section id="ojas-approach" className="py-24 border-b border-cosmos-border bg-cosmos-bg">
+    <section id="ojas-approach" className="py-24 border-b border-surface-border bg-surface-ground">
       <div className="max-w-7xl mx-auto px-4 tablet:px-8 space-y-16">
         {/* Section Header */}
-        <div className="max-w-2xl space-y-4">
-          <div className="inline-flex items-center gap-2 font-mono text-xs text-cosmos-accent tracking-wider uppercase">
+        <div className="max-w-2xl space-y-3.5">
+          <div className="inline-flex items-center gap-2 font-mono text-xs text-primary font-bold tracking-wider uppercase">
             <span>METHODOLOGY & ARCHITECTURE</span>
           </div>
-          <h2 className="font-heading text-3xl tablet:text-5xl font-bold tracking-tight text-cosmos-text">
-            Understand. Monitor. Explore.
+          <h2 className="font-heading text-3xl tablet:text-5xl font-extrabold tracking-tight text-content-main">
+            Observe. Explain. Safeguard.
           </h2>
-          <p className="text-cosmos-text-secondary text-base leading-relaxed">
-            A three-pillar closed-loop system transforming telemetry into actionable countermeasures for deep space crews.
+          <p className="text-content-secondary text-base leading-relaxed">
+            A three-tier architecture uniting high-frequency telemetry, clinical safety invariants, and empirical NASA spaceflight data.
           </p>
         </div>
 
-        {/* Connected Three-Pillar Visual Composition */}
-        <div className="grid grid-cols-1 laptop:grid-cols-3 gap-8 relative">
-          {pillars.map((p, idx) => (
-            <div key={idx} className="relative flex flex-col justify-between">
-              <Card className="p-8 h-full space-y-6 flex flex-col justify-between bg-cosmos-card hover:border-cosmos-accent/50 transition-colors">
-                <div className="space-y-5">
-                  {/* Top Bar with Number and Icon */}
-                  <div className="flex items-center justify-between border-b border-cosmos-border pb-4">
-                    <span className="font-mono text-2xl font-bold text-cosmos-accent">{p.number}</span>
-                    <Badge variant="accent" size="sm">{p.label}</Badge>
+        {/* 3 Pillars Grid */}
+        <div className="grid grid-cols-1 laptop:grid-cols-3 gap-8">
+          {pillars.map((p) => (
+            <Card
+              key={p.number}
+              className="p-8 bg-white border-surface-border space-y-6 shadow-soft hover:shadow-soft-md hover:border-primary/40 transition-all duration-200"
+            >
+              <div className="flex items-center justify-between">
+                <span className="font-mono text-3xl font-black text-primary/30">{p.number}</span>
+                <Badge variant="purple" size="sm">
+                  {p.label}
+                </Badge>
+              </div>
+
+              <div className="space-y-2">
+                <h3 className="font-heading text-xl font-bold text-content-main">{p.title}</h3>
+                <p className="text-xs font-mono font-medium text-primary">{p.subtitle}</p>
+              </div>
+
+              <p className="text-xs text-content-secondary leading-relaxed">{p.description}</p>
+
+              <div className="pt-4 border-t border-surface-border space-y-2">
+                {p.features.map((feat, idx) => (
+                  <div key={idx} className="flex items-center gap-2 text-xs text-content-main">
+                    <span className="h-1.5 w-1.5 rounded-full bg-primary" />
+                    <span>{feat}</span>
                   </div>
-
-                  {/* Heading & Subtitle */}
-                  <div>
-                    <h3 className="font-heading text-2xl font-bold text-cosmos-text">{p.title}</h3>
-                    <p className="font-mono text-xs text-cosmos-muted mt-1">{p.subtitle}</p>
-                  </div>
-
-                  {/* Description */}
-                  <p className="text-sm text-cosmos-text-secondary leading-relaxed">
-                    {p.description}
-                  </p>
-                </div>
-
-                {/* Features List */}
-                <div className="pt-6 border-t border-cosmos-border/70 space-y-2">
-                  {p.features.map((feat, fIdx) => (
-                    <div key={fIdx} className="flex items-center gap-2 text-xs font-mono text-cosmos-text-secondary">
-                      <span className="h-1.5 w-1.5 rounded-full bg-cosmos-accent"></span>
-                      <span>{feat}</span>
-                    </div>
-                  ))}
-                </div>
-              </Card>
-            </div>
+                ))}
+              </div>
+            </Card>
           ))}
         </div>
       </div>

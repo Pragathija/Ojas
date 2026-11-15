@@ -3,7 +3,7 @@ import { Modal } from '../common/Modal';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
 import { HealthInsight } from '../../types/insights';
-import { ShieldCheck, BookOpen, ExternalLink } from 'lucide-react';
+import { ShieldCheck, BookOpen, ExternalLink, Activity, Info } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 export interface InsightDetailModalProps {
@@ -24,44 +24,47 @@ export const InsightDetailModal: React.FC<InsightDetailModalProps> = ({
       <div className="space-y-5 text-sm font-sans">
         {/* Header tags */}
         <div className="flex items-center justify-between">
-          <Badge variant={insight.priority === 'moderate' ? 'caution' : 'neutral'}>
+          <Badge variant={insight.priority === 'moderate' ? 'caution' : 'purple'}>
             CATEGORY: {insight.category.toUpperCase()}
           </Badge>
-          <span className="font-mono text-xs text-cosmos-muted">{insight.timestamp}</span>
+          <span className="font-mono text-xs text-content-muted">{insight.timestamp}</span>
         </div>
 
         {/* Observation Summary */}
-        <div className="space-y-1">
-          <span className="font-mono text-[10px] text-cosmos-muted uppercase block">
-            PHYSIOLOGICAL OBSERVATION
-          </span>
-          <p className="text-cosmos-text leading-relaxed">{insight.summary}</p>
+        <div className="p-4 rounded-xl bg-surface-ground border border-surface-border space-y-1.5">
+          <div className="flex items-center gap-1.5 text-[11px] font-mono font-bold text-primary uppercase">
+            <Activity className="h-3.5 w-3.5" />
+            <span>Physiological Observation</span>
+          </div>
+          <p className="text-content-main leading-relaxed font-medium">{insight.summary}</p>
         </div>
 
         {/* Scientific Rationale Box */}
-        <div className="p-4 rounded bg-cosmos-elevated border border-cosmos-border space-y-2">
-          <div className="flex items-center gap-2 text-cosmos-accent font-mono text-xs font-semibold">
+        <div className="p-4 rounded-xl bg-primary-subtle/50 border border-primary/20 space-y-2">
+          <div className="flex items-center gap-2 text-primary font-mono text-xs font-bold">
             <ShieldCheck className="h-4 w-4" />
             <span>SCIENTIFIC CONTEXT & CITATION</span>
           </div>
-          <p className="text-xs text-cosmos-text-secondary leading-relaxed">
+          <p className="text-xs text-content-main leading-relaxed">
             {insight.scientificContext}
           </p>
         </div>
 
         {/* Evidence Summary */}
-        <div className="p-3 rounded bg-cosmos-card border border-cosmos-border text-xs font-mono space-y-1">
-          <span className="text-cosmos-muted text-[10px] uppercase block">EVIDENCE CLASSIFICATION</span>
-          <span className="text-cosmos-accent font-semibold">{insight.evidenceClassification}</span>
-          <p className="text-cosmos-text-secondary font-sans mt-1">{insight.evidenceSummary}</p>
+        <div className="p-4 rounded-xl bg-white border border-surface-border text-xs space-y-2">
+          <div className="flex items-center justify-between">
+            <span className="text-content-muted text-[10px] font-mono uppercase font-bold">Evidence Classification</span>
+            <Badge variant="purple" size="sm">{insight.evidenceClassification}</Badge>
+          </div>
+          <p className="text-content-secondary font-sans leading-relaxed">{insight.evidenceSummary}</p>
         </div>
 
         {/* Footer Actions */}
-        <div className="flex items-center justify-between pt-2 border-t border-cosmos-border">
+        <div className="flex items-center justify-between pt-3 border-t border-surface-border">
           <Link to={`/insights?id=${insight.id}`} onClick={onClose}>
-            <Button variant="outline" size="sm" className="gap-2 font-mono text-xs">
+            <Button variant="outline" size="sm" className="gap-2 font-mono text-xs text-primary border-primary/30 hover:border-primary">
               <BookOpen className="h-3.5 w-3.5" />
-              <span>EXPLORE FULL EXPLAINABILITY</span>
+              <span>Full Explainability</span>
               <ExternalLink className="h-3 w-3" />
             </Button>
           </Link>

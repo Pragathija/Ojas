@@ -32,7 +32,7 @@ export const EvidenceStrength: React.FC<EvidenceStrengthProps> = ({
         };
       case 'NASA Technical Reports':
         return {
-          variant: 'accent' as const,
+          variant: 'purple' as const,
           icon: <FileText className="h-3 w-3" />,
           label: 'NASA TECHNICAL REPORTS',
         };
@@ -45,7 +45,7 @@ export const EvidenceStrength: React.FC<EvidenceStrengthProps> = ({
       case 'Evidence Unavailable':
       default:
         return {
-          variant: 'caution' as const,
+          variant: 'neutral' as const,
           icon: <HelpCircle className="h-3 w-3" />,
           label: 'EVIDENCE UNAVAILABLE IN RELEASE',
         };
@@ -63,12 +63,12 @@ export const EvidenceStrength: React.FC<EvidenceStrengthProps> = ({
         </Badge>
       </div>
       {sourceTitle && (
-        <span className="text-[11px] text-cosmos-text-secondary truncate font-mono">
+        <span className="text-[11px] text-content-secondary truncate font-mono">
           Ref: {sourceTitle}
         </span>
       )}
       {evidenceScope && (
-        <span className="text-[10px] text-cosmos-muted line-clamp-1 font-sans">
+        <span className="text-[10px] text-content-muted line-clamp-1 font-sans">
           Scope: {evidenceScope}
         </span>
       )}

@@ -152,7 +152,7 @@ export const TrendsPage: React.FC = () => {
           {stats ? (
             <TrendStatistics stats={stats} vital={selectedVital} />
           ) : (
-            <div className="p-6 rounded bg-cosmos-card border border-cosmos-border text-xs font-mono text-cosmos-muted text-center">
+            <div className="p-6 rounded-2xl bg-white border border-[#EAE6F2] text-xs font-mono text-content-muted text-center shadow-soft">
               Compiling statistical moments...
             </div>
           )}

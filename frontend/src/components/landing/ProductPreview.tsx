@@ -3,124 +3,128 @@ import { Link } from 'react-router-dom';
 import { Card } from '../common/Card';
 import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
-import { Activity, ShieldCheck, HeartPulse, ArrowRight, ShieldAlert } from 'lucide-react';
-import { MOCK_ASTRONAUT, MOCK_VITALS } from '../../data/mockData';
-import { VitalSign } from '../../types/health';
+import { Activity, ShieldCheck, HeartPulse, ArrowRight, ShieldAlert, Sparkles, Heart } from 'lucide-react';
 
 export const ProductPreview: React.FC = () => {
   return (
-    <section id="product-preview" className="py-24 border-b border-cosmos-border bg-cosmos-bg">
+    <section id="product-preview" className="py-24 border-b border-[#E9E4F2] bg-white">
       <div className="max-w-7xl mx-auto px-4 tablet:px-8 space-y-12">
         {/* Section Header */}
         <div className="flex flex-col laptop:flex-row laptop:items-end justify-between gap-6">
-          <div className="max-w-2xl space-y-4">
-            <div className="inline-flex items-center gap-2 font-mono text-xs text-cosmos-accent tracking-wider uppercase">
+          <div className="max-w-2xl space-y-3.5">
+            <div className="inline-flex items-center gap-2 font-mono text-xs text-primary font-bold tracking-wider uppercase">
               <span>UNIFIED MISSION COCKPIT</span>
             </div>
-            <h2 className="font-heading text-3xl tablet:text-5xl font-bold tracking-tight text-cosmos-text">
-              One mission. A clearer picture.
+            <h2 className="font-heading text-4xl tablet:text-5xl font-extrabold tracking-tight text-[#252039]">
+              One Mission. Complete Physiological Clarity.
             </h2>
-            <p className="text-cosmos-text-secondary text-base leading-relaxed">
-              Experience the actual OJAS telemetry dashboard. Built for flight surgeons, mission control specialists, and autonomous astronauts.
+            <p className="text-[#716B83] text-base leading-relaxed font-sans">
+              Experience the actual Ojas telemetry dashboard. Engineered for astronauts, flight surgeons, and mission control.
             </p>
           </div>
           <Link to="/dashboard">
-            <Button size="md" className="gap-2 font-mono text-xs">
-              <span>OPEN LIVE MISSION CONSOLE</span>
+            <Button size="lg" className="gap-2 font-heading font-bold text-xs shadow-soft rounded-xl py-3 px-6">
+              <span>Open Mission Console</span>
               <ArrowRight className="h-4 w-4" />
             </Button>
           </Link>
         </div>
 
-        {/* Realistic Dashboard Window Shell */}
-        <div className="rounded-lg border border-cosmos-border bg-cosmos-bg-secondary shadow-2xl overflow-hidden">
-          {/* Dashboard Header Bar */}
-          <div className="h-12 border-b border-cosmos-border px-4 tablet:px-6 flex items-center justify-between bg-cosmos-card/80">
+        {/* Dashboard Window Shell */}
+        <div className="rounded-2xl border border-[#E9E4F2] bg-[#F8F6FF] shadow-soft-lg overflow-hidden">
+          {/* Dashboard Window Header Bar */}
+          <div className="h-12 border-b border-[#E9E4F2] px-4 tablet:px-6 flex items-center justify-between bg-white">
             <div className="flex items-center gap-3">
               <div className="flex gap-1.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-semantic-priority/80"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-semantic-caution/80"></span>
-                <span className="w-2.5 h-2.5 rounded-full bg-semantic-normal/80"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-rose-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
               </div>
-              <span className="font-mono text-xs text-cosmos-text-secondary border-l border-cosmos-border pl-3">
-                OJAS FLIGHT TELEMETRY SYSTEM v0.1 • ARMED
+              <span className="font-mono text-xs text-[#716B83] border-l border-[#E9E4F2] pl-3">
+                OJAS FLIGHT TELEMETRY SYSTEM v2.0 • ACTIVE
               </span>
             </div>
             <div className="flex items-center gap-3 font-mono text-xs">
-              <Badge variant="caution" size="sm" className="gap-1.5">
-                <ShieldAlert className="h-3 w-3" />
-                <span>SYNTHETIC DEMONSTRATION STREAM</span>
+              <Badge variant="normal" size="sm" className="gap-1.5">
+                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>DOWNLINK CONNECTED</span>
               </Badge>
-              <span className="text-cosmos-muted hidden tablet:inline">MET: DAY 142 • 14:32:08 UTC</span>
             </div>
           </div>
 
-          {/* Inner Dashboard View Content */}
-          <div className="p-6 space-y-6">
-            {/* KPI Cards Row */}
+          {/* Interactive Preview Content */}
+          <div className="p-6 tablet:p-8 space-y-6">
             <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-4">
-              <div className="p-4 rounded bg-cosmos-card border border-cosmos-border space-y-1">
-                <div className="flex justify-between text-xs font-mono text-cosmos-muted uppercase">
-                  <span>Readiness Index</span>
-                  <Activity className="h-4 w-4 text-cosmos-accent" />
+              <div className="p-4 rounded-xl bg-white border border-[#E9E4F2] shadow-xs space-y-2">
+                <div className="flex items-center justify-between text-xs text-[#716B83] font-mono">
+                  <span>HEART RATE</span>
+                  <Badge variant="normal" size="sm">NOMINAL</Badge>
                 </div>
-                <div className="font-heading text-2xl font-bold text-cosmos-text">{MOCK_ASTRONAUT.readinessScore}%</div>
-                <p className="text-[10px] text-semantic-normal">Physical capacity nominal</p>
+                <div className="flex items-baseline gap-1">
+                  <span className="font-heading font-black text-3xl text-[#252039]">72</span>
+                  <span className="text-xs text-[#716B83] font-mono">BPM</span>
+                </div>
+                <p className="text-[11px] text-[#8C869E] font-mono">Rolling Baseline: 70 BPM</p>
               </div>
 
-              <div className="p-4 rounded bg-cosmos-card border border-cosmos-border space-y-1">
-                <div className="flex justify-between text-xs font-mono text-cosmos-muted uppercase">
-                  <span>Exercise Compliance</span>
-                  <ShieldCheck className="h-4 w-4 text-semantic-normal" />
+              <div className="p-4 rounded-xl bg-white border border-[#E9E4F2] shadow-xs space-y-2">
+                <div className="flex items-center justify-between text-xs text-[#716B83] font-mono">
+                  <span>BLOOD OXYGEN</span>
+                  <Badge variant="normal" size="sm">NOMINAL</Badge>
                 </div>
-                <div className="font-heading text-2xl font-bold text-cosmos-text">96%</div>
-                <p className="text-[10px] text-cosmos-text-secondary">ARED protocol satisfied</p>
+                <div className="flex items-baseline gap-1">
+                  <span className="font-heading font-black text-3xl text-[#252039]">98.2</span>
+                  <span className="text-xs text-[#716B83] font-mono">%</span>
+                </div>
+                <p className="text-[11px] text-[#8C869E] font-mono">Corridor: 96.0–100.0%</p>
               </div>
 
-              <div className="p-4 rounded bg-cosmos-card border border-cosmos-border space-y-1">
-                <div className="flex justify-between text-xs font-mono text-cosmos-muted uppercase">
-                  <span>Heart Rate</span>
-                  <HeartPulse className="h-4 w-4 text-semantic-info" />
+              <div className="p-4 rounded-xl bg-white border border-[#E9E4F2] shadow-xs space-y-2">
+                <div className="flex items-center justify-between text-xs text-[#716B83] font-mono">
+                  <span>BLOOD PRESSURE</span>
+                  <Badge variant="normal" size="sm">NOMINAL</Badge>
                 </div>
-                <div className="font-heading text-2xl font-bold text-cosmos-text">68 <span className="text-xs font-normal text-cosmos-muted font-mono">BPM</span></div>
-                <p className="text-[10px] text-semantic-normal">Resting baseline</p>
+                <div className="flex items-baseline gap-1">
+                  <span className="font-heading font-black text-3xl text-[#252039]">118/78</span>
+                  <span className="text-xs text-[#716B83] font-mono">mmHg</span>
+                </div>
+                <p className="text-[11px] text-[#8C869E] font-mono">MAP: 91.3 mmHg</p>
               </div>
 
-              <div className="p-4 rounded bg-cosmos-card border border-cosmos-border space-y-1">
-                <div className="flex justify-between text-xs font-mono text-cosmos-muted uppercase">
-                  <span>Radiation Dosage</span>
-                  <span className="h-2 w-2 rounded-full bg-semantic-normal"></span>
+              <div className="p-4 rounded-xl bg-white border border-[#E9E4F2] shadow-xs space-y-2">
+                <div className="flex items-center justify-between text-xs text-[#716B83] font-mono">
+                  <span>CORE TEMP</span>
+                  <Badge variant="normal" size="sm">NOMINAL</Badge>
                 </div>
-                <div className="font-heading text-2xl font-bold text-cosmos-text">0.42 <span className="text-xs font-normal text-cosmos-muted font-mono">mSv/d</span></div>
-                <p className="text-[10px] text-cosmos-text-secondary">Corridor safe</p>
+                <div className="flex items-baseline gap-1">
+                  <span className="font-heading font-black text-3xl text-[#252039]">36.8</span>
+                  <span className="text-xs text-[#716B83] font-mono">°C</span>
+                </div>
+                <p className="text-[11px] text-[#8C869E] font-mono">Diurnal rhythm intact</p>
               </div>
             </div>
 
-            {/* Vital Sensors Row */}
-            <Card className="p-5 bg-cosmos-card/70 border-cosmos-border">
-              <div className="flex items-center justify-between pb-3 border-b border-cosmos-border mb-4">
-                <span className="font-heading text-sm font-semibold text-cosmos-text uppercase tracking-wider">
-                  Active Multi-Parameter Stream
-                </span>
-                <span className="font-mono text-xs text-cosmos-accent">CREW: {MOCK_ASTRONAUT.name} ({MOCK_ASTRONAUT.callsign})</span>
+            {/* Bottom Preview Banner */}
+            <div className="p-5 rounded-2xl bg-[#F2EDFF] border border-primary/25 flex flex-col tablet:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-3">
+                <div className="h-10 w-10 rounded-xl purple-gradient flex items-center justify-center text-white shrink-0 shadow-xs">
+                  <Sparkles className="h-5 w-5" />
+                </div>
+                <div>
+                  <h4 className="font-heading font-bold text-sm text-[#252039]">
+                    Dual-Layer Explainable AI &amp; Safety Rules Authoritative
+                  </h4>
+                  <p className="text-xs text-[#716B83] mt-0.5 font-sans">
+                    Critical physiological non-suppression guarantees that medical emergencies are never muted by ML uncertainty.
+                  </p>
+                </div>
               </div>
-              <div className="grid grid-cols-1 tablet:grid-cols-3 gap-4">
-                {MOCK_VITALS.slice(0, 3).map((v: VitalSign) => (
-                  <div key={v.id} className="p-3.5 rounded bg-cosmos-elevated border border-cosmos-border space-y-1">
-                    <div className="flex justify-between text-xs font-mono text-cosmos-muted">
-                      <span>{v.name}</span>
-                      <span className="text-semantic-normal uppercase text-[10px]">{v.status}</span>
-                    </div>
-                    <div className="font-mono text-xl font-bold text-cosmos-text tabular-nums">
-                      {v.currentValue} <span className="text-xs text-cosmos-muted font-normal">{v.unit}</span>
-                    </div>
-                    <div className="text-[10px] font-mono text-cosmos-muted">
-                      Nominal: {v.nominalRange[0]}–{v.nominalRange[1]} {v.unit}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Card>
+              <Link to="/dashboard" className="shrink-0">
+                <Button size="sm" className="font-heading font-bold text-xs shadow-soft rounded-xl py-2 px-4">
+                  Launch Interactive Console
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

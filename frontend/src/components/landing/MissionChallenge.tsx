@@ -7,79 +7,74 @@ const challenges = [
   {
     icon: Activity,
     badge: 'MICROGRAVITY',
-    title: 'Altered Gravity',
+    title: 'Altered Gravity & Fluid Shifts',
     description:
-      'Long-duration microgravity causes fluid cephalad redistribution, bone mineral density loss (1-1.5% monthly in weight-bearing bones), and muscular deconditioning without targeted resistive load.',
+      'Microgravity triggers cephalad fluid redistribution, bone mineral density loss (1-1.5% monthly in weight-bearing bones), and muscular deconditioning without targeted resistive load.',
   },
   {
     icon: ShieldAlert,
     badge: 'IONIZING PARTICLES',
-    title: 'Deep Space Radiation',
+    title: 'Deep Space Radiation Environment',
     description:
-      'Outside Earth’s magnetosphere, galactic cosmic radiation (GCR) and solar particle events (SPE) impart continuous low-dose HZE ions, creating cumulative oxidative stress and cellular mutation risks.',
+      'Beyond low-Earth orbit, galactic cosmic rays and solar particle events impart continuous low-dose HZE ions, creating cumulative oxidative stress and cellular mutation risks.',
   },
   {
     icon: Brain,
     badge: 'HABITAT CONFINEMENT',
-    title: 'Isolation & Confinement',
+    title: 'Isolation & Multi-Year Confinement',
     description:
-      'Extreme confinement within pressurized modules demands close crew coordination, constant psychological monitoring, and early detection of cognitive fatigue across multi-year transit phases.',
+      'Autonomous crew operations during Mars transit impose up to 24-minute communication latency, requiring edge AI decision-support rather than real-time Houston guidance.',
   },
   {
     icon: Heart,
     badge: 'HEMODYNAMICS',
-    title: 'Physiological Adaptation',
+    title: 'Cardiovascular Remodeling',
     description:
-      'Cardiovascular remodeling decreases total blood volume and blunts baroreceptor sensitivity, creating post-landing orthostatic intolerance and exercise capacity degradation.',
+      'Reduced cardiac workload blunts baroreceptor sensitivity and reduces stroke volume, creating post-landing orthostatic intolerance and exercise capacity degradation.',
   },
   {
     icon: Moon,
     badge: 'CIRCADIAN DE-SYNCHRONY',
-    title: 'Circadian Disruption',
+    title: 'Circadian Sleep Disruption',
     description:
-      'A 90-minute orbital cycle with 16 daily sunrises deprives astronauts of natural diurnal solar cues, necessitating artificial phototherapy and strict sleep hygiene protocols.',
+      'Rapid orbital cycles and habitat noise disrupt natural sleep architecture, necessitating continuous circadian actigraphy monitoring and personalized phototherapy schedules.',
   },
 ];
 
 export const MissionChallenge: React.FC = () => {
   return (
-    <section id="mission-challenge" className="py-24 border-b border-cosmos-border bg-cosmos-bg-secondary">
+    <section id="mission-challenge" className="py-24 border-b border-surface-border bg-white">
       <div className="max-w-7xl mx-auto px-4 tablet:px-8 space-y-16">
         {/* Section Header */}
-        <div className="max-w-2xl space-y-4">
-          <div className="inline-flex items-center gap-2 font-mono text-xs text-cosmos-accent tracking-wider uppercase">
-            <span>PHYSIOLOGICAL FRONTIERS</span>
+        <div className="max-w-2xl space-y-3.5">
+          <div className="inline-flex items-center gap-2 font-mono text-xs text-primary font-bold tracking-wider uppercase">
+            <span>THE AEROSPACE MEDICINE CHALLENGE</span>
           </div>
-          <h2 className="font-heading text-3xl tablet:text-5xl font-bold tracking-tight text-cosmos-text">
-            Space changes everything.
+          <h2 className="font-heading text-3xl tablet:text-5xl font-extrabold tracking-tight text-content-main">
+            Human Biology at the Edge of Exploration.
           </h2>
-          <p className="text-cosmos-text-secondary text-base leading-relaxed">
-            The spaceflight environment subjects the human organism to extreme stressors absent during terrestrial evolution.
-            Safeguarding crew autonomy on multi-year exploration voyages requires integrated, evidence-grounded monitoring.
+          <p className="text-content-secondary text-base leading-relaxed">
+            As missions push beyond the Van Allen belts to the Moon and Mars, astronauts must monitor their own health autonomously with mathematically rigorous, explainable intelligence.
           </p>
         </div>
 
-        {/* Editorial Challenge Grid */}
+        {/* Challenge Cards Grid */}
         <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-6">
           {challenges.map((c, idx) => (
             <Card
               key={idx}
-              className="p-6 space-y-4 hover:border-cosmos-accent/40 transition-colors duration-200"
+              className="p-6 bg-surface-ground border-surface-border space-y-4 hover:border-primary/40 hover:shadow-soft-md transition-all duration-200"
             >
               <div className="flex items-center justify-between">
-                <div className="h-10 w-10 rounded bg-cosmos-elevated border border-cosmos-border flex items-center justify-center text-cosmos-accent">
+                <div className="h-11 w-11 rounded-xl bg-primary-light flex items-center justify-center text-primary">
                   <c.icon className="h-5 w-5" />
                 </div>
-                <Badge variant="neutral" size="sm">{c.badge}</Badge>
+                <Badge variant="purple" size="sm">
+                  {c.badge}
+                </Badge>
               </div>
-
-              <h3 className="font-heading text-xl font-semibold text-cosmos-text">
-                {c.title}
-              </h3>
-
-              <p className="text-sm text-cosmos-text-secondary leading-relaxed font-normal">
-                {c.description}
-              </p>
+              <h3 className="font-heading text-lg font-bold text-content-main">{c.title}</h3>
+              <p className="text-xs text-content-secondary leading-relaxed">{c.description}</p>
             </Card>
           ))}
         </div>

@@ -4,7 +4,7 @@ import { Badge } from '../common/Badge';
 import { Button } from '../common/Button';
 import { VitalSign } from '../../types/health';
 import { Link } from 'react-router-dom';
-import { Activity, ShieldAlert, ArrowRight } from 'lucide-react';
+import { Activity, ShieldAlert, ArrowRight, ShieldCheck } from 'lucide-react';
 
 export interface MetricDetailModalProps {
   vital: VitalSign | null;
@@ -21,66 +21,63 @@ export const MetricDetailModal: React.FC<MetricDetailModalProps> = ({
 
   return (
     <Modal isOpen={isOpen} onClose={onClose} title={`${vital.name} (${vital.symbol})`}>
-      <div className="space-y-6 text-sm font-sans">
+      <div className="space-y-5 text-sm font-sans">
         {/* Top Metric Header */}
-        <div className="flex items-baseline justify-between p-4 rounded bg-cosmos-elevated border border-cosmos-border">
+        <div className="flex items-baseline justify-between p-4 rounded-xl bg-surface-ground border border-surface-border">
           <div>
-            <span className="text-[10px] font-mono text-cosmos-muted uppercase block">CURRENT OBSERVATION</span>
+            <span className="text-[10px] font-mono text-content-secondary uppercase block font-semibold">
+              CURRENT OBSERVATION
+            </span>
             <div className="flex items-baseline gap-2 mt-1">
-              <span className="font-mono text-3xl font-bold text-cosmos-text tabular-nums">
+              <span className="font-heading font-black text-3xl text-content-main tabular-nums">
                 {vital.currentValue}
               </span>
-              <span className="font-mono text-sm text-cosmos-text-secondary">{vital.unit}</span>
+              <span className="font-mono text-sm font-semibold text-content-secondary">{vital.unit}</span>
             </div>
           </div>
-          <Badge variant={vital.status === 'caution' ? 'caution' : 'normal'}>
+          <Badge variant={vital.status === 'priority' ? 'priority' : vital.status === 'caution' ? 'caution' : 'normal'}>
             {vital.status.toUpperCase()}
           </Badge>
         </div>
 
         {/* Technical Specification Matrix */}
         <div className="space-y-2 text-xs font-mono">
-          <div className="flex justify-between py-1.5 border-b border-cosmos-border">
-            <span className="text-cosmos-muted">MEASUREMENT DOMAIN:</span>
-            <span className="text-cosmos-text uppercase">{vital.category}</span>
+          <div className="flex justify-between py-2 border-b border-surface-border">
+            <span className="text-content-secondary">MEASUREMENT DOMAIN:</span>
+            <span className="text-content-main font-bold uppercase">{vital.category}</span>
           </div>
-          <div className="flex justify-between py-1.5 border-b border-cosmos-border">
-            <span className="text-cosmos-muted">ILLUSTRATIVE REF BAND:</span>
-            <span className="text-cosmos-text">
+          <div className="flex justify-between py-2 border-b border-surface-border">
+            <span className="text-content-secondary">NOMINAL CORRIDOR:</span>
+            <span className="text-content-main font-bold">
               {vital.nominalRange[0]} – {vital.nominalRange[1]} {vital.unit}
             </span>
           </div>
-          <div className="flex justify-between py-1.5 border-b border-cosmos-border">
-            <span className="text-cosmos-muted">SENSOR CONFIDENCE:</span>
-            <span className="text-semantic-normal">{vital.confidence}% HIGH FIDELITY</span>
+          <div className="flex justify-between py-2 border-b border-surface-border">
+            <span className="text-content-secondary">SIGNAL FIDELITY:</span>
+            <span className="text-emerald-700 font-bold">{vital.confidence}% CONFIDENCE</span>
           </div>
-          <div className="flex justify-between py-1.5 border-b border-cosmos-border">
-            <span className="text-cosmos-muted">OBSERVATION AGE:</span>
-            <span className="text-cosmos-text">Latest simulated observation ({vital.lastUpdated})</span>
+          <div className="flex justify-between py-2 border-b border-surface-border">
+            <span className="text-content-secondary">DATA CONTEXT:</span>
+            <span className="text-primary font-bold">{vital.dataClassification}</span>
           </div>
         </div>
 
-        {/* Synthetic Demonstration Notice */}
-        <div className="p-3 rounded bg-cosmos-bg border border-cosmos-border text-xs flex items-start gap-2">
-          <ShieldAlert className="h-4 w-4 text-semantic-caution shrink-0 mt-0.5" />
-          <p className="text-cosmos-text-secondary leading-relaxed">
-            Data Integrity: Measurement generated under simulated bio-harness stream parameters for platform validation.
-            Illustrative reference bands are demonstration corridors and not individualized clinical thresholds or diagnostic criteria.
-          </p>
+        {/* Scientific Rationale */}
+        <div className="space-y-1.5 p-3.5 rounded-xl bg-purple-50/60 border border-primary/20 text-xs text-content-secondary">
+          <span className="font-bold text-primary font-heading uppercase text-[11px] block">
+            Physiological Relevance
+          </span>
+          <p className="leading-relaxed">{vital.physiologicalRelevance}</p>
         </div>
 
-        {/* Actions */}
-        <div className="flex items-center justify-between pt-2">
-          <Link to="/indicators" onClick={onClose}>
-            <Button variant="outline" size="sm" className="gap-2 font-mono text-xs">
-              <Activity className="h-3.5 w-3.5" />
-              <span>FULL INDICATOR MATRIX</span>
-              <ArrowRight className="h-3 w-3" />
+        {/* Action Link to Full Trends */}
+        <div className="pt-2">
+          <Link to="/trends" onClick={onClose}>
+            <Button className="w-full gap-2 font-heading font-bold text-xs shadow-soft">
+              <span>View Full Longitudinal Trend Workspace</span>
+              <ArrowRight className="h-3.5 w-3.5" />
             </Button>
           </Link>
-          <Button variant="secondary" size="sm" onClick={onClose}>
-            Close
-          </Button>
         </div>
       </div>
     </Modal>

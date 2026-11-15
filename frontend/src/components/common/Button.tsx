@@ -10,14 +10,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'primary', size = 'md', isLoading, disabled, children, ...props }, ref) => {
     const baseStyles =
-      'inline-flex items-center justify-center font-medium transition-colors duration-150 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-cosmos-accent disabled:opacity-50 disabled:pointer-events-none rounded';
+      'inline-flex items-center justify-center font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 disabled:opacity-50 disabled:pointer-events-none rounded-lg';
 
     const variants = {
-      primary: 'bg-cosmos-accent hover:bg-cosmos-accent-secondary text-cosmos-bg font-semibold shadow-sm',
-      secondary: 'bg-cosmos-elevated hover:bg-cosmos-card text-cosmos-text border border-cosmos-border',
-      outline: 'border border-cosmos-border hover:border-cosmos-accent text-cosmos-text hover:bg-cosmos-elevated/40',
-      ghost: 'text-cosmos-text-secondary hover:text-cosmos-text hover:bg-cosmos-elevated/50',
-      danger: 'bg-semantic-priority/20 text-semantic-priority hover:bg-semantic-priority/30 border border-semantic-priority/40',
+      primary: 'bg-primary hover:bg-primary-dark text-white font-semibold shadow-soft hover:shadow-soft-md active:scale-[0.98]',
+      secondary: 'bg-primary-light hover:bg-[#E4DDFF] text-primary border border-primary/25 font-semibold active:scale-[0.98]',
+      outline: 'border border-surface-border hover:border-primary text-content-main hover:bg-surface-subtle active:scale-[0.98]',
+      ghost: 'text-content-secondary hover:text-content-main hover:bg-primary-light/50',
+      danger: 'bg-semantic-critical/10 text-semantic-critical hover:bg-semantic-critical/20 border border-semantic-critical/30',
     };
 
     const sizes = {

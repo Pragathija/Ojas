@@ -1,10 +1,12 @@
 import React from 'react';
 import {
   LandingNavbar,
-  HeroSplit,
-  MissionChallenge,
-  OjasApproach,
+  HeroSpaceUniverse,
+  DiscoverOjas,
+  MindInSpace,
+  BodyInSpace,
   ScientificFoundation,
+  DailySpaceJourney,
   ProductPreview,
   FinalCTA,
   LandingFooter,
@@ -12,31 +14,37 @@ import {
 
 export const LandingPage: React.FC = () => {
   return (
-    <div className="min-h-screen bg-cosmos-bg text-cosmos-text selection:bg-cosmos-accent selection:text-white">
+    <div className="min-h-screen bg-[#F8F6FF] text-[#252039] selection:bg-[#7656D9] selection:text-white">
       {/* Editorial Navigation */}
       <LandingNavbar />
 
       <main>
-        {/* 1. Cinematic Split-Screen Hero */}
-        <HeroSplit />
+        {/* 1. Immersive Astronaut Space Universe Hero (45% astronaut illustration, no purple rectangle over text) */}
+        <HeroSpaceUniverse />
 
-        {/* 2. Space Changes Everything Challenge Section */}
-        <MissionChallenge />
+        {/* Section A: Discover Ojas */}
+        <DiscoverOjas />
 
-        {/* 3. The OJAS Approach: Monitor, Understand, Act */}
-        <OjasApproach />
+        {/* Section B: Your Mind in Space (Mind Garden Preview) */}
+        <MindInSpace />
 
-        {/* 4. Scientific Rigor & NASA Research Foundation */}
+        {/* Section C: Your Body in Space (Physical Telemetry & Baselines) */}
+        <BodyInSpace />
+
+        {/* Section D: Explore NASA Science (BRSMAct, OSD-575, OSD-569) */}
         <ScientificFoundation />
 
-        {/* 5. Actual Dashboard Product Preview */}
+        {/* Section E: Your Daily Space Journey (Exploration Roadmap & Habits) */}
+        <DailySpaceJourney />
+
+        {/* Live Cockpit Product Preview */}
         <ProductPreview />
 
-        {/* 6. High-Impact Final Call To Action */}
+        {/* Section F: Begin Your Mission (Final CTA) */}
         <FinalCTA />
       </main>
 
-      {/* 7. Minimal Aerospace Footer */}
+      {/* Footer */}
       <LandingFooter />
     </div>
   );

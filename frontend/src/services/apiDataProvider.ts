@@ -5,6 +5,7 @@ import {
   IInsightsService,
   IDataServiceRegistry,
 } from './serviceInterfaces';
+import { authService } from './authService';
 import {
   HealthSummary,
   VitalSign,
@@ -108,10 +109,17 @@ class ApiHealthService implements IHealthService {
       const overallStatus: HealthStatusLevel =
         overallRaw === 'CRITICAL' ? 'priority' : overallRaw === 'CAUTION' ? 'caution' : 'normal';
 
+      const currentUser = authService.getUser();
+      const resolvedName = currentUser?.full_name || MOCK_ASTRONAUT.name;
+      const resolvedCallsign = currentUser?.callsign || MOCK_ASTRONAUT.callsign;
+      const resolvedId = currentUser?.astronaut_id || summaryData.astronaut_id || DEFAULT_ASTRONAUT_ID;
+
       return {
         astronaut: {
           ...MOCK_ASTRONAUT,
-          id: summaryData.astronaut_id || DEFAULT_ASTRONAUT_ID,
+          id: resolvedId,
+          name: resolvedName,
+          callsign: resolvedCallsign,
         },
         vitals,
         overallStatus,
@@ -275,6 +283,15 @@ class ApiHealthService implements IHealthService {
   }
 
   async getAstronautProfile(): Promise<AstronautProfile> {
+    const currentUser = authService.getUser();
+    if (currentUser) {
+      return {
+        ...MOCK_ASTRONAUT,
+        id: currentUser.astronaut_id || MOCK_ASTRONAUT.id,
+        name: currentUser.full_name || MOCK_ASTRONAUT.name,
+        callsign: currentUser.callsign || MOCK_ASTRONAUT.callsign,
+      };
+    }
     return MOCK_ASTRONAUT;
   }
 }

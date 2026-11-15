@@ -57,7 +57,25 @@ class MockHealthService implements IHealthService {
         : 24 * 3600 * 1000;
 
     const baseValue =
-      metricId === 'hr-01' ? 68 : metricId === 'spo2-01' ? 98.5 : metricId === 'temp-01' ? 37.1 : metricId === 'sleep-01' ? 84 : metricId === 'rad-01' ? 0.42 : 48;
+      metricId === 'hr-01'
+        ? 68
+        : metricId === 'spo2-01'
+        ? 98.5
+        : metricId === 'bp-01'
+        ? 92
+        : metricId === 'temp-01'
+        ? 37.1
+        : metricId === 'sleep-01'
+        ? 84
+        : metricId === 'sleep-dur-01'
+        ? 7.4
+        : metricId === 'fatigue-01'
+        ? 24
+        : metricId === 'stress-01'
+        ? 32
+        : metricId === 'rad-01'
+        ? 0.42
+        : 48;
 
     return Array.from({ length: count }, (_, i) => {
       const timestamp = new Date(now - (count - 1 - i) * interval).toISOString();

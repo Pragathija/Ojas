@@ -22,81 +22,81 @@ export const InsightCard: React.FC<InsightCardProps> = ({
     <Card
       interactive={Boolean(onSelect)}
       onClick={onSelect}
-      className={`p-6 space-y-4 transition-all duration-150 flex flex-col justify-between ${
+      className={`p-6 space-y-4 transition-all duration-200 flex flex-col justify-between rounded-2xl border ${
         isSelected
-          ? 'border-cosmos-accent bg-cosmos-elevated shadow-lg ring-1 ring-cosmos-accent/30'
-          : 'hover:border-cosmos-border/80'
+          ? 'border-primary bg-purple-50/40 shadow-soft-md ring-2 ring-primary/20'
+          : 'bg-white border-[#EAE6F2] hover:border-primary/40 hover:shadow-soft'
       }`}
     >
       <div className="space-y-3">
         {/* Top Badges */}
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <Badge variant="accent" size="sm">
+          <Badge variant="purple" size="sm">
             {insight.category.toUpperCase()}
           </Badge>
-          <div className="flex items-center gap-1.5 font-mono text-[10px] text-cosmos-muted">
-            <ShieldAlert className="h-3 w-3 text-semantic-caution" />
-            <span>SYNTHETIC TELEMETRY</span>
+          <div className="flex items-center gap-1.5 font-mono text-[10px] text-content-muted">
+            <ShieldAlert className="h-3 w-3 text-primary" />
+            <span>EXPLAINABILITY MODEL</span>
           </div>
         </div>
 
         {/* Title */}
-        <h3 className="font-heading text-lg font-bold text-cosmos-text leading-snug">
+        <h3 className="font-heading text-lg font-bold text-content-main leading-snug">
           {insight.title}
         </h3>
 
         {/* Indicators Involved */}
         <div className="flex flex-wrap items-center gap-1.5 font-mono text-xs">
-          <span className="text-cosmos-muted text-[10px] uppercase">INDICATORS:</span>
+          <span className="text-content-muted text-[10px] uppercase font-semibold">INDICATORS:</span>
           {insight.relatedIndicatorNames.map((name, i) => (
             <span
               key={i}
-              className="px-2 py-0.5 rounded bg-cosmos-card border border-cosmos-border text-[11px] text-cosmos-text-secondary flex items-center gap-1"
+              className="px-2.5 py-0.5 rounded-lg bg-[#FAF9FF] border border-[#EAE6F2] text-[11px] text-content-secondary flex items-center gap-1 font-medium"
             >
-              <Activity className="h-3 w-3 text-cosmos-accent" />
+              <Activity className="h-3 w-3 text-primary" />
               <span>{name}</span>
             </span>
           ))}
         </div>
 
         {/* 4 Analytical Blocks */}
-        <div className="space-y-2 pt-2 border-t border-cosmos-border/60 text-xs font-sans">
+        <div className="space-y-2 pt-2 border-t border-[#EAE6F2] text-xs font-sans">
           {/* 1. Directly Observed Pattern */}
-          <div className="space-y-0.5">
-            <span className="font-mono text-[10px] font-semibold text-cosmos-muted uppercase tracking-wider block">
-              1. Observed Simulated Pattern
+          <div className="p-2.5 rounded-xl bg-[#FAF9FF] border border-[#EAE6F2] space-y-0.5">
+            <span className="font-mono text-[10px] font-bold text-content-muted uppercase tracking-wider block">
+              1. Observed Telemetry Pattern
             </span>
-            <p className="text-cosmos-text-secondary leading-relaxed text-[12px]">
+            <p className="text-content-secondary leading-relaxed text-[12px]">
               {insight.observedPattern}
             </p>
           </div>
 
           {/* 2. Statistical Interpretation */}
-          <div className="space-y-0.5">
-            <span className="font-mono text-[10px] font-semibold text-cosmos-accent uppercase tracking-wider block">
+          <div className="p-2.5 rounded-xl bg-purple-50/50 border border-primary/20 space-y-0.5">
+            <span className="font-mono text-[10px] font-bold text-primary uppercase tracking-wider block">
               2. Statistical Interpretation
             </span>
-            <p className="text-cosmos-text-secondary leading-relaxed text-[12px]">
+            <p className="text-content-secondary leading-relaxed text-[12px]">
               {insight.statisticalInterpretation}
             </p>
           </div>
 
           {/* 3. Scientific Context */}
-          <div className="space-y-0.5">
-            <span className="font-mono text-[10px] font-semibold text-semantic-info uppercase tracking-wider block">
+          <div className="p-2.5 rounded-xl bg-[#FAF9FF] border border-[#EAE6F2] space-y-0.5">
+            <span className="font-mono text-[10px] font-bold text-emerald-700 uppercase tracking-wider block">
               3. Spaceflight Scientific Context
             </span>
-            <p className="text-cosmos-text-secondary leading-relaxed text-[12px]">
+            <p className="text-content-secondary leading-relaxed text-[12px]">
               {insight.scientificContext}
             </p>
           </div>
 
           {/* 4. Investigation Hypothesis */}
-          <div className="space-y-0.5">
-            <span className="font-mono text-[10px] font-semibold text-semantic-normal uppercase tracking-wider block">
+          <div className="p-2.5 rounded-xl bg-[#FAF9FF] border border-[#EAE6F2] space-y-0.5">
+            <span className="font-mono text-[10px] font-bold text-primary uppercase tracking-wider block">
               4. Research Hypothesis
             </span>
-            <p className="text-cosmos-text-secondary leading-relaxed text-[12px]">
+            <p className="text-content-secondary leading-relaxed text-[12px]">
               {insight.investigationHypothesis}
             </p>
           </div>
@@ -104,7 +104,7 @@ export const InsightCard: React.FC<InsightCardProps> = ({
       </div>
 
       {/* Footer Details */}
-      <div className="pt-3 border-t border-cosmos-border/60 space-y-3">
+      <div className="pt-3 border-t border-[#EAE6F2] space-y-3">
         {/* Evidence Strength Indicator */}
         <div className="flex items-center justify-between">
           <EvidenceStrength
@@ -116,7 +116,7 @@ export const InsightCard: React.FC<InsightCardProps> = ({
 
         {/* Card Actions */}
         <div className="flex items-center justify-between pt-1 text-xs font-mono">
-          <div className="flex items-center gap-1 text-cosmos-accent hover:underline font-semibold cursor-pointer">
+          <div className="flex items-center gap-1 text-primary hover:underline font-bold cursor-pointer">
             <Cpu className="h-3.5 w-3.5" />
             <span>EXPLAINABILITY AUDIT</span>
             <ChevronRight className="h-3.5 w-3.5" />
@@ -128,10 +128,10 @@ export const InsightCard: React.FC<InsightCardProps> = ({
                 e.stopPropagation();
                 onNavigateToCountermeasures(insight.id);
               }}
-              className="flex items-center gap-1 text-cosmos-text-secondary hover:text-cosmos-text transition-colors px-2 py-1 rounded bg-cosmos-card border border-cosmos-border hover:border-cosmos-accent text-[11px]"
+              className="flex items-center gap-1.5 text-content-secondary hover:text-content-main transition-colors px-2.5 py-1 rounded-xl bg-[#FAF9FF] border border-[#EAE6F2] hover:border-primary text-[11px] font-medium shadow-xs"
             >
               <span>{insight.countermeasureIds.length} Linked Countermeasures</span>
-              <ArrowRight className="h-3 w-3 text-cosmos-accent" />
+              <ArrowRight className="h-3 w-3 text-primary" />
             </button>
           )}
         </div>

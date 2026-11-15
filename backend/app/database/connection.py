@@ -49,7 +49,7 @@ def check_db_connection() -> tuple[bool, str]:
 
 
 def init_db():
-    """Create all tables in the database."""
+    """Create all tables in the database and seed baseline accounts."""
     # Import all models so that Base.metadata is fully populated
     from app.models import (
         astronaut,
@@ -60,6 +60,20 @@ def init_db():
         telemetry_idempotency,
         alert_outbox,
         stream_session,
+        user,
+        mission,
+        quest,
+        achievement,
+        wellness,
+        audit_log,
     )
     Base.metadata.create_all(bind=engine)
     logger.info("Database tables initialized successfully.")
+
+    # Seed initial demonstration accounts and missions
+    from app.services.seed_service import seed_initial_data
+    db = SessionLocal()
+    try:
+        seed_initial_data(db)
+    finally:
+        db.close()

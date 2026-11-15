@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { AlertTriangle, Pill, Moon } from "lucide-react";
 import {
   nasaResearchService,
   ResearchAnalysisReport,
@@ -53,7 +54,7 @@ export const NasaResearchDashboard: React.FC = () => {
     return (
       <div className="p-6 bg-red-950/40 border border-red-500/50 rounded-xl text-red-200">
         <h3 className="text-lg font-bold text-red-100 flex items-center gap-2">
-          <span>⚠️</span> NASA Research Telemetry Unavailable
+          <AlertTriangle className="h-5 w-5 text-red-300" /> NASA Research Telemetry Unavailable
         </h3>
         <p className="mt-2 text-sm">{error || "Could not retrieve research dataset."}</p>
         <button
@@ -108,7 +109,7 @@ export const NasaResearchDashboard: React.FC = () => {
         {/* Prominent Scientific Boundary Alert */}
         <div className="mt-5 p-4 bg-amber-950/40 border border-amber-600/50 rounded-xl text-amber-200">
           <div className="flex items-start gap-3">
-            <span className="text-xl">⚠️</span>
+            <AlertTriangle className="h-5 w-5 text-amber-300 shrink-0 mt-0.5" />
             <div className="space-y-1 text-sm">
               <div className="font-bold text-amber-100 flex flex-wrap items-center gap-2">
                 <span>SCIENTIFIC BOUNDARY NOTICE:</span>
@@ -370,7 +371,8 @@ export const NasaResearchDashboard: React.FC = () => {
                       <td className="py-2 px-3">
                         {hasMed ? (
                           <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[10px] font-semibold bg-rose-900/60 text-rose-200 border border-rose-700/50">
-                            💊 {pt.reported_medications.join(", ")}
+                            <Pill className="h-3 w-3 inline mr-1" />
+                            {pt.reported_medications.join(", ")}
                           </span>
                         ) : (
                           <span className="text-slate-600">—</span>
@@ -399,7 +401,7 @@ export const NasaResearchDashboard: React.FC = () => {
               <div className="p-4 bg-slate-950/80 border border-rose-800/50 rounded-xl space-y-3">
                 <div className="flex items-center justify-between">
                   <h4 className="font-bold text-rose-200 text-sm flex items-center gap-2">
-                    <span>💊</span> Nights With Sleep Aid
+                    <Pill className="h-4 w-4 text-rose-300" /> Nights With Sleep Aid
                   </h4>
                   <span className="text-xs font-mono px-2 py-0.5 bg-rose-950 text-rose-300 rounded border border-rose-800/60">
                     n = {medication_audit.in_test_sleep_aid_nights.observation_count} observations
@@ -433,7 +435,7 @@ export const NasaResearchDashboard: React.FC = () => {
               <div className="p-4 bg-slate-950/80 border border-slate-800 rounded-xl space-y-3">
                 <div className="flex items-center justify-between">
                   <h4 className="font-bold text-slate-300 text-sm flex items-center gap-2">
-                    <span>🌙</span> Nights Without Sleep Aid
+                    <Moon className="h-4 w-4 text-slate-300" /> Nights Without Sleep Aid
                   </h4>
                   <span className="text-xs font-mono px-2 py-0.5 bg-slate-800 text-slate-300 rounded">
                     n = {medication_audit.in_test_non_sleep_aid_nights.observation_count} observations

@@ -2,6 +2,13 @@ import { IDataServiceRegistry } from './serviceInterfaces';
 import { mockDataProvider } from './mockDataProvider';
 import { createApiDataProvider } from './apiDataProvider';
 
+export * from './authService';
+export * from './aiService';
+export * from './gamificationService';
+export * from './adminService';
+export * from './nasaResearchService';
+export * from './serviceInterfaces';
+
 /**
  * Data Provider Selection Gateway
  * Switches between Mock Demonstration Data and live FastAPI backend

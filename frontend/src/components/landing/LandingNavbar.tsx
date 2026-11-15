@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Menu, X } from 'lucide-react';
+import { ArrowRight, Menu, X, Sparkles, Compass, ShieldCheck, Rocket, UserCheck } from 'lucide-react';
 import { Button } from '../common/Button';
 
 export const LandingNavbar: React.FC = () => {
@@ -15,108 +15,135 @@ export const LandingNavbar: React.FC = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-cosmos-bg/85 backdrop-blur-md border-b border-cosmos-border transition-all">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-[#E9E4F2] shadow-xs transition-all">
       <div className="max-w-7xl mx-auto px-4 tablet:px-8 h-20 flex items-center justify-between">
         {/* Brand Identity */}
         <Link to="/" className="flex items-center gap-3 group">
-          <div className="h-9 w-9 rounded bg-cosmos-card border border-cosmos-border flex items-center justify-center font-heading font-bold text-cosmos-accent text-xl group-hover:border-cosmos-accent/60 transition-colors">
-            Ω
+          <div className="h-11 w-11 rounded-2xl purple-gradient flex items-center justify-center font-heading font-black text-white text-xl shadow-soft group-hover:scale-105 transition-transform overflow-hidden p-1.5">
+            <img
+              src="/ojas.svg"
+              alt="Ojas Logo"
+              className="w-full h-full object-contain filter brightness-110"
+              onError={(e) => {
+                (e.currentTarget as HTMLElement).style.display = 'none';
+              }}
+            />
           </div>
           <div>
-            <span className="font-heading font-bold text-lg tracking-[0.2em] text-cosmos-text">OJAS</span>
-            <span className="block text-[9px] font-mono text-cosmos-muted uppercase tracking-widest">BEYOND EARTH</span>
+            <span className="font-heading font-black text-xl tracking-wider text-[#252039]">OJAS</span>
+            <span className="block text-[9px] font-mono font-bold text-primary uppercase tracking-widest">
+              ASTRONAUT WELLNESS UNIVERSE
+            </span>
           </div>
         </Link>
 
-        {/* Center Editorial Navigation */}
-        <div className="hidden laptop:flex items-center gap-8 text-sm font-medium text-cosmos-text-secondary">
+        {/* Center Navigation Links: High Contrast, Bold */}
+        <div className="hidden laptop:flex items-center gap-6 text-sm font-heading font-bold text-[#252039]">
           <button
-            onClick={() => scrollToSection('mission-challenge')}
-            className="hover:text-cosmos-text transition-colors duration-150 cursor-pointer"
+            onClick={() => scrollToSection('journey')}
+            className="hover:text-primary transition-colors cursor-pointer"
           >
-            The Mission
+            The Journey
+          </button>
+          <Link to="/mind-garden" className="hover:text-primary transition-colors">
+            Mind Garden
+          </Link>
+          <button
+            onClick={() => scrollToSection('body')}
+            className="hover:text-primary transition-colors cursor-pointer"
+          >
+            Physical Health
           </button>
           <button
-            onClick={() => scrollToSection('ojas-approach')}
-            className="hover:text-cosmos-text transition-colors duration-150 cursor-pointer"
+            onClick={() => scrollToSection('science')}
+            className="hover:text-primary transition-colors cursor-pointer"
           >
-            Our Approach
+            NASA Science
           </button>
-          <button
-            onClick={() => scrollToSection('scientific-foundation')}
-            className="hover:text-cosmos-text transition-colors duration-150 cursor-pointer"
+          <Link
+            to="/astronaut/games"
+            className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-pastel-lavender text-primary font-bold hover:bg-[#DDD3F9] transition-colors"
           >
-            The Science
-          </button>
-          <button
-            onClick={() => scrollToSection('product-preview')}
-            className="hover:text-cosmos-text transition-colors duration-150 cursor-pointer"
-          >
-            System Preview
-          </button>
+            <Compass className="h-3.5 w-3.5" />
+            <span>Wellness Games</span>
+          </Link>
         </div>
 
-        {/* Right CTA */}
-        <div className="hidden laptop:flex items-center gap-4">
-          <Link to="/dashboard">
-            <Button size="sm" className="gap-2 font-mono text-xs px-4">
-              <span>ENTER OJAS</span>
-              <ArrowRight className="h-3.5 w-3.5" />
+        {/* Right CTA: Dual Portals */}
+        <div className="hidden laptop:flex items-center gap-3">
+          <Link to="/astronaut">
+            <Button size="sm" className="gap-2 font-heading font-bold text-xs shadow-soft px-4 py-2 rounded-xl">
+              <Rocket className="h-3.5 w-3.5" />
+              <span>Astronaut Portal</span>
+            </Button>
+          </Link>
+          <Link to="/admin">
+            <Button variant="secondary" size="sm" className="gap-1.5 font-heading font-bold text-xs px-3.5 py-2 rounded-xl border border-primary/25">
+              <ShieldCheck className="h-3.5 w-3.5 text-primary" />
+              <span>NASA Admin</span>
             </Button>
           </Link>
         </div>
 
-        {/* Mobile menu button */}
-        <div className="laptop:hidden flex items-center gap-2">
-          <Link to="/dashboard">
-            <Button size="sm" className="text-xs px-3 font-mono">
-              ENTER
-            </Button>
-          </Link>
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-cosmos-text-secondary hover:text-cosmos-text rounded border border-cosmos-border hover:bg-cosmos-elevated"
-            aria-label="Toggle navigation menu"
-          >
-            {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
+        {/* Mobile Menu Button */}
+        <button
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="laptop:hidden p-2 text-[#252039] hover:text-primary rounded-lg border border-[#E9E4F2] bg-white shadow-xs"
+          aria-label="Toggle navigation menu"
+        >
+          {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+        </button>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Mobile Menu Drawer */}
       {mobileMenuOpen && (
-        <div className="laptop:hidden border-b border-cosmos-border bg-cosmos-bg-secondary px-6 py-6 space-y-4 animate-in fade-in slide-in-from-top-2">
-          <div className="flex flex-col space-y-3 text-sm font-medium text-cosmos-text-secondary">
+        <div className="laptop:hidden border-b border-[#E9E4F2] bg-white p-6 space-y-4 shadow-soft-lg animate-in slide-in-from-top-2">
+          <div className="flex flex-col gap-3 font-heading font-bold text-sm text-[#252039]">
             <button
-              onClick={() => scrollToSection('mission-challenge')}
-              className="text-left py-2 hover:text-cosmos-text border-b border-cosmos-border/50"
+              onClick={() => scrollToSection('journey')}
+              className="text-left py-2 hover:text-primary"
             >
-              The Mission
+              The Journey
+            </button>
+            <Link
+              to="/mind-garden"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-left py-2 hover:text-primary"
+            >
+              Mind Garden
+            </Link>
+            <button
+              onClick={() => scrollToSection('body')}
+              className="text-left py-2 hover:text-primary"
+            >
+              Physical Wellness
             </button>
             <button
-              onClick={() => scrollToSection('ojas-approach')}
-              className="text-left py-2 hover:text-cosmos-text border-b border-cosmos-border/50"
+              onClick={() => scrollToSection('science')}
+              className="text-left py-2 hover:text-primary"
             >
-              Our Approach
+              NASA Science Lab
             </button>
-            <button
-              onClick={() => scrollToSection('scientific-foundation')}
-              className="text-left py-2 hover:text-cosmos-text border-b border-cosmos-border/50"
+            <Link
+              to="/astronaut/games"
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-left py-2 text-primary font-extrabold flex items-center gap-2"
             >
-              The Science
-            </button>
-            <button
-              onClick={() => scrollToSection('product-preview')}
-              className="text-left py-2 hover:text-cosmos-text"
-            >
-              System Preview
-            </button>
+              <Compass className="h-4 w-4" />
+              <span>Wellness Games</span>
+            </Link>
           </div>
-          <div className="pt-2">
-            <Link to="/dashboard" onClick={() => setMobileMenuOpen(false)}>
-              <Button className="w-full justify-center gap-2 font-mono text-xs">
-                <span>LAUNCH MISSION DASHBOARD</span>
-                <ArrowRight className="h-4 w-4" />
+          <div className="pt-3 border-t border-[#E9E4F2] flex flex-col gap-2.5">
+            <Link to="/astronaut" onClick={() => setMobileMenuOpen(false)}>
+              <Button size="md" className="w-full gap-2 font-heading font-bold text-sm shadow-soft rounded-xl">
+                <Rocket className="h-4 w-4" />
+                <span>Astronaut Portal</span>
+              </Button>
+            </Link>
+            <Link to="/admin" onClick={() => setMobileMenuOpen(false)}>
+              <Button variant="secondary" size="md" className="w-full gap-2 font-heading font-bold text-sm rounded-xl border border-primary/25">
+                <ShieldCheck className="h-4 w-4 text-primary" />
+                <span>NASA Administration</span>
               </Button>
             </Link>
           </div>

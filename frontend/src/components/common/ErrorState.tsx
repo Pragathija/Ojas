@@ -19,17 +19,17 @@ export const ErrorState: React.FC<ErrorStateProps> = ({
   return (
     <div
       className={cn(
-        'flex flex-col items-center justify-center rounded border border-semantic-priority/30 bg-semantic-priority/5 p-6 text-center',
+        'flex flex-col items-center justify-center rounded-xl border border-rose-200 bg-rose-50/60 p-6 text-center shadow-soft',
         className
       )}
     >
-      <div className="mb-2 text-semantic-priority">
-        <AlertCircle className="h-7 w-7" />
+      <div className="mb-2 p-2.5 rounded-full bg-rose-100 text-semantic-critical">
+        <AlertCircle className="h-6 w-6" />
       </div>
-      <h4 className="font-heading text-sm font-medium text-cosmos-text">{title}</h4>
-      <p className="mt-1 max-w-sm text-xs text-cosmos-text-secondary">{message}</p>
+      <h4 className="font-heading text-sm font-bold text-content-main">{title}</h4>
+      <p className="mt-1 max-w-sm text-xs text-content-secondary">{message}</p>
       {onRetry && (
-        <Button variant="outline" size="sm" onClick={onRetry} className="mt-4 border-semantic-priority/40 hover:bg-semantic-priority/10">
+        <Button variant="outline" size="sm" onClick={onRetry} className="mt-4 border-rose-300 text-rose-700 hover:bg-rose-100/50">
           Re-establish Connection
         </Button>
       )}

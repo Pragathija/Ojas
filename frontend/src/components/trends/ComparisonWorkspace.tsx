@@ -63,20 +63,20 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
   });
 
   return (
-    <Card className="p-6 space-y-4">
-      <div className="flex flex-col tablet:flex-row tablet:items-center justify-between gap-3 border-b border-cosmos-border pb-3">
+    <Card className="p-6 space-y-4 rounded-2xl bg-white border border-[#EAE6F2] shadow-soft">
+      <div className="flex flex-col tablet:flex-row tablet:items-center justify-between gap-3 border-b border-[#EAE6F2] pb-3">
         <div className="flex items-center gap-2">
-          <SlidersHorizontal className="h-4 w-4 text-cosmos-accent" />
-          <h3 className="font-heading text-base font-bold text-cosmos-text">
+          <SlidersHorizontal className="h-4 w-4 text-primary" />
+          <h3 className="font-heading text-base font-bold text-content-main">
             Indicator Comparison
           </h3>
         </div>
         <div className="flex items-center gap-2 font-mono text-xs">
-          <span className="text-cosmos-muted">COMPARE WITH:</span>
+          <span className="text-content-muted">COMPARE WITH:</span>
           <select
             value={secondaryMetricId}
             onChange={(e) => handleSelectSecondary(e.target.value)}
-            className="rounded border border-cosmos-border bg-cosmos-card px-2.5 py-1 text-xs font-mono text-cosmos-text focus:outline-none focus:ring-1 focus:ring-cosmos-accent"
+            className="rounded-xl border border-[#EAE6F2] bg-white px-3 py-1.5 text-xs font-mono text-content-main focus:outline-none focus:ring-2 focus:ring-primary/20 shadow-xs"
           >
             {vitals
               .filter((v) => v.id !== primaryVital.id)
@@ -89,12 +89,12 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
         </div>
       </div>
 
-      <div className="p-3 rounded bg-cosmos-elevated border border-cosmos-border/70 text-xs font-sans space-y-1">
-        <p className="text-cosmos-text-secondary leading-relaxed">
+      <div className="p-3.5 rounded-xl bg-[#FAF9FF] border border-[#EAE6F2] text-xs font-sans space-y-1">
+        <p className="text-content-secondary leading-relaxed">
           Independent dual-axis trajectory alignment. Allows qualitative inspection of physiological trends across separate bodily systems (e.g., autonomic heart rate vs. peripheral oxygen saturation) without merging incompatible scale ranges.
         </p>
-        <p className="text-semantic-caution font-medium">
-          <strong>Caution:</strong> Co-movement visualization does not imply causal or physiological correlation. Confounding operational factors (such as exercise cycles or ambient temperature shifts) can influence separate biometrics independently.
+        <p className="text-primary font-medium text-[11px]">
+          <strong>Notice:</strong> Co-movement visualization explores trend alignment. Operational factors (such as exercise cycles or ambient temperature shifts) can influence separate biometrics independently.
         </p>
       </div>
 
@@ -102,18 +102,18 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
       <div className="h-72 w-full pt-2">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={comparisonData} margin={{ top: 10, right: 20, left: -10, bottom: 0 }}>
-            <CartesianGrid stroke="#30353A" strokeDasharray="3 3" opacity={0.6} />
+            <CartesianGrid stroke="#EAE6F2" strokeDasharray="3 3" opacity={0.8} />
             <XAxis
               dataKey="time"
-              stroke="#70777D"
-              tick={{ fill: '#A5A9AD', fontSize: 10, fontFamily: 'JetBrains Mono' }}
+              stroke="#8C869E"
+              tick={{ fill: '#716B83', fontSize: 10, fontFamily: 'JetBrains Mono' }}
               tickLine={false}
             />
             {/* Primary Left Axis */}
             <YAxis
               yAxisId="left"
-              stroke="#F07832"
-              tick={{ fill: '#F07832', fontSize: 10, fontFamily: 'JetBrains Mono' }}
+              stroke="#7656D9"
+              tick={{ fill: '#7656D9', fontSize: 10, fontFamily: 'JetBrains Mono' }}
               tickLine={false}
               domain={['auto', 'auto']}
               unit={` ${primaryVital.unit}`}
@@ -123,8 +123,8 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
               <YAxis
                 yAxisId="right"
                 orientation="right"
-                stroke="#7D9CCB"
-                tick={{ fill: '#7D9CCB', fontSize: 10, fontFamily: 'JetBrains Mono' }}
+                stroke="#10B981"
+                tick={{ fill: '#10B981', fontSize: 10, fontFamily: 'JetBrains Mono' }}
                 tickLine={false}
                 domain={['auto', 'auto']}
                 unit={` ${secondaryVital.unit}`}
@@ -132,12 +132,13 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
             )}
             <RechartsTooltip
               contentStyle={{
-                backgroundColor: '#191C20',
-                borderColor: '#30353A',
-                borderRadius: '4px',
+                backgroundColor: '#FFFFFF',
+                borderColor: '#EAE6F2',
+                borderRadius: '12px',
+                boxShadow: '0 4px 20px -2px rgba(118,86,217,0.12)',
                 fontFamily: 'JetBrains Mono',
                 fontSize: '11px',
-                color: '#F4F1EA',
+                color: '#252039',
               }}
             />
             <Legend wrapperStyle={{ fontFamily: 'JetBrains Mono', fontSize: '11px', paddingTop: '10px' }} />
@@ -146,8 +147,8 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
               type="monotone"
               name={`${primaryVital.name} (${primaryVital.unit})`}
               dataKey="primaryVal"
-              stroke="#F07832"
-              strokeWidth={2}
+              stroke="#7656D9"
+              strokeWidth={2.5}
               dot={false}
             />
             {secondaryVital && (
@@ -156,8 +157,8 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
                 type="monotone"
                 name={`${secondaryVital.name} (${secondaryVital.unit})`}
                 dataKey="secondaryVal"
-                stroke="#7D9CCB"
-                strokeWidth={2}
+                stroke="#10B981"
+                strokeWidth={2.5}
                 dot={false}
               />
             )}
@@ -165,9 +166,9 @@ export const ComparisonWorkspace: React.FC<ComparisonWorkspaceProps> = ({
         </ResponsiveContainer>
       </div>
 
-      <div className="pt-2 border-t border-cosmos-border/60 flex items-center justify-between text-[11px] font-mono text-cosmos-muted">
+      <div className="pt-2 border-t border-[#EAE6F2] flex items-center justify-between text-[11px] font-mono text-content-muted">
         <span>Dual independent scales preserved</span>
-        <span className="text-semantic-caution">Statistical correlation exploratory tool only</span>
+        <span className="text-primary font-bold">Statistical correlation exploratory tool only</span>
       </div>
     </Card>
   );

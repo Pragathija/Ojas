@@ -1,3 +1,4 @@
+import os
 import logging
 from contextlib import asynccontextmanager
 from datetime import datetime, timezone
@@ -20,7 +21,8 @@ logger = logging.getLogger("ojas.api")
 async def lifespan(app: FastAPI):
     # Initialize database tables on startup
     logger.info(f"Starting {settings.PROJECT_NAME} in '{settings.ENVIRONMENT}' environment")
-    init_db()
+    if not os.getenv("PYTEST_CURRENT_TEST"):
+        init_db()
     yield
     logger.info("Application shutdown completed.")
 

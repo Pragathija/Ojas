@@ -17,11 +17,11 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   return (
     <div className={cn('flex items-center justify-between py-2', className)}>
       <div>
-        <h2 className="font-heading text-sm font-semibold tracking-wider uppercase text-cosmos-text">
+        <h2 className="font-heading text-sm font-bold tracking-wider uppercase text-content-main">
           {title}
         </h2>
         {description && (
-          <p className="text-xs text-cosmos-text-secondary mt-0.5">{description}</p>
+          <p className="text-xs text-content-secondary mt-0.5">{description}</p>
         )}
       </div>
       {action && <div>{action}</div>}

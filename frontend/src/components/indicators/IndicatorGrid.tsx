@@ -16,10 +16,10 @@ export const IndicatorGrid: React.FC<IndicatorGridProps> = ({
   return (
     <div className="space-y-4">
       <div className="flex items-center justify-between">
-        <h2 className="font-heading text-sm font-semibold tracking-wider uppercase text-cosmos-text">
+        <h2 className="font-heading text-sm font-bold tracking-wider uppercase text-content-main">
           Available Physiological Sensors ({vitals.length})
         </h2>
-        <span className="font-mono text-xs text-cosmos-muted">
+        <span className="font-mono text-xs text-content-secondary">
           SELECT CARD TO INSPECT CLINICAL METADATA
         </span>
       </div>

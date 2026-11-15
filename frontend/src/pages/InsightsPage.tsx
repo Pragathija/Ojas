@@ -173,14 +173,13 @@ export const InsightsPage: React.FC = () => {
       />
 
       {/* 2. Primary Navigation Tabs */}
-      <div className="flex items-center gap-3 border-b border-cosmos-border pb-3">
+      <div className="flex items-center gap-3 border-b border-surface-border pb-3">
         <button
           onClick={() => setActiveTab('insights')}
-          className={`flex items-center gap-2 px-4 py-2 rounded text-xs font-mono font-bold transition-colors border ${
-            activeTab === 'insights'
-              ? 'bg-cosmos-accent text-cosmos-bg border-cosmos-accent'
-              : 'bg-cosmos-card text-cosmos-text-secondary border-cosmos-border hover:text-cosmos-text'
-          }`}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all border ${activeTab === 'insights'
+              ? 'bg-primary text-white border-primary shadow-soft'
+              : 'bg-white text-content-secondary border-surface-border hover:text-content-main hover:bg-surface-ground'
+            }`}
         >
           <Lightbulb className="h-4 w-4" />
           <span>MISSION INSIGHTS ({insights.length})</span>
@@ -188,11 +187,10 @@ export const InsightsPage: React.FC = () => {
 
         <button
           onClick={() => setActiveTab('countermeasures')}
-          className={`flex items-center gap-2 px-4 py-2 rounded text-xs font-mono font-bold transition-colors border ${
-            activeTab === 'countermeasures'
-              ? 'bg-cosmos-accent text-cosmos-bg border-cosmos-accent'
-              : 'bg-cosmos-card text-cosmos-text-secondary border-cosmos-border hover:text-cosmos-text'
-          }`}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-mono font-bold transition-all border ${activeTab === 'countermeasures'
+              ? 'bg-primary text-white border-primary shadow-soft'
+              : 'bg-white text-content-secondary border-surface-border hover:text-content-main hover:bg-surface-ground'
+            }`}
         >
           <Layers className="h-4 w-4" />
           <span>COUNTERMEASURE EXPLORER ({countermeasures.length})</span>
@@ -222,7 +220,7 @@ export const InsightsPage: React.FC = () => {
 
           {/* Grid of Insight Cards */}
           <div className="space-y-2">
-            <div className="flex items-center justify-between font-mono text-xs text-cosmos-muted px-1">
+            <div className="flex items-center justify-between font-mono text-xs text-content-secondary px-1 font-semibold">
               <span>ACTIVE RESEARCH PATTERNS ({filteredInsights.length} AVAILABLE)</span>
               <span>CLICK CARD TO INSPECT EXPLAINABILITY</span>
             </div>

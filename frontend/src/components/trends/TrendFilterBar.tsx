@@ -17,41 +17,47 @@ export const TrendFilterBar: React.FC<TrendFilterBarProps> = ({
   onTimeframeChange,
 }) => {
   return (
-    <div className="flex flex-col laptop:flex-row laptop:items-center justify-between gap-4 p-4 rounded bg-cosmos-card border border-cosmos-border">
+    <div className="flex flex-col laptop:flex-row laptop:items-center justify-between gap-4 p-4 rounded-2xl bg-white border border-[#EAE6F2] shadow-soft">
       {/* Indicator Selection Buttons */}
       <div className="flex flex-wrap items-center gap-2">
-        <span className="font-mono text-xs text-cosmos-muted mr-1 uppercase">METRIC:</span>
-        {vitals.map((v) => (
-          <button
-            key={v.id}
-            onClick={() => onSelectMetric(v.id)}
-            className={`px-3 py-1 rounded text-xs font-mono transition-colors border ${
-              selectedMetricId === v.id
-                ? 'bg-cosmos-accent text-cosmos-bg font-bold border-cosmos-accent'
-                : 'bg-cosmos-elevated text-cosmos-text-secondary border-cosmos-border hover:text-cosmos-text'
-            }`}
-          >
-            {v.name.toUpperCase()} ({v.symbol})
-          </button>
-        ))}
+        <span className="font-mono text-xs font-bold text-content-muted mr-1 uppercase">METRIC:</span>
+        {vitals.map((v) => {
+          const isSelected = selectedMetricId === v.id;
+          return (
+            <button
+              key={v.id}
+              onClick={() => onSelectMetric(v.id)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-mono transition-all border ${
+                isSelected
+                  ? 'bg-primary text-white font-bold border-primary shadow-xs'
+                  : 'bg-[#FAF9FF] text-content-secondary border-[#EAE6F2] hover:bg-primary-light/40 hover:text-primary'
+              }`}
+            >
+              {v.name.toUpperCase()} ({v.symbol})
+            </button>
+          );
+        })}
       </div>
 
       {/* Time-Range Selector */}
-      <div className="flex items-center gap-1.5 self-start laptop:self-auto">
-        <span className="font-mono text-xs text-cosmos-muted mr-1 uppercase">WINDOW:</span>
-        {(['24h', '7d', '30d', '90d', 'full'] as const).map((tf) => (
-          <button
-            key={tf}
-            onClick={() => onTimeframeChange(tf)}
-            className={`px-2.5 py-1 rounded text-xs font-mono transition-colors border ${
-              timeframe === tf
-                ? 'bg-cosmos-accent text-cosmos-bg font-bold border-cosmos-accent'
-                : 'bg-cosmos-elevated text-cosmos-text-secondary border-cosmos-border hover:text-cosmos-text'
-            }`}
-          >
-            {tf.toUpperCase()}
-          </button>
-        ))}
+      <div className="flex items-center gap-1.5 self-start laptop:self-auto shrink-0">
+        <span className="font-mono text-xs font-bold text-content-muted mr-1 uppercase">WINDOW:</span>
+        {(['24h', '7d', '30d', '90d', 'full'] as const).map((tf) => {
+          const isSelected = timeframe === tf;
+          return (
+            <button
+              key={tf}
+              onClick={() => onTimeframeChange(tf)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-mono transition-all border ${
+                isSelected
+                  ? 'bg-primary text-white font-bold border-primary shadow-xs'
+                  : 'bg-[#FAF9FF] text-content-secondary border-[#EAE6F2] hover:bg-primary-light/40 hover:text-primary'
+              }`}
+            >
+              {tf.toUpperCase()}
+            </button>
+          );
+        })}
       </div>
     </div>
   );

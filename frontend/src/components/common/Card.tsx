@@ -12,9 +12,9 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
       <div
         ref={ref}
         className={cn(
-          'rounded border border-cosmos-border transition-all duration-150',
-          elevated ? 'bg-cosmos-elevated' : 'bg-cosmos-card',
-          interactive && 'hover:border-cosmos-accent/50 cursor-pointer',
+          'rounded-2xl border border-surface-border bg-white text-content-main transition-all duration-200',
+          elevated ? 'shadow-soft-md border-surface-border' : 'shadow-soft',
+          interactive && 'hover:border-primary/40 hover:shadow-soft-md cursor-pointer hover:-translate-y-0.5',
           className
         )}
         {...props}

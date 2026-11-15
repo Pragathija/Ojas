@@ -18,28 +18,31 @@ export const ResearchFilterBar: React.FC<ResearchFilterBarProps> = ({
   categories,
 }) => {
   return (
-    <div className="flex flex-col laptop:flex-row laptop:items-center justify-between gap-4 p-4 rounded bg-cosmos-card border border-cosmos-border">
+    <div className="flex flex-col laptop:flex-row laptop:items-center justify-between gap-4 p-4 rounded-2xl bg-white border border-[#EAE6F2] shadow-soft">
       {/* Category Pills */}
       <div className="flex flex-wrap items-center gap-2">
-        <span className="font-mono text-xs text-cosmos-muted mr-1 uppercase">FOCUS:</span>
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => onCategoryChange(cat)}
-            className={`px-3 py-1 rounded text-xs font-mono transition-colors border ${
-              selectedCategory === cat
-                ? 'bg-cosmos-accent text-cosmos-bg font-bold border-cosmos-accent'
-                : 'bg-cosmos-elevated text-cosmos-text-secondary border-cosmos-border hover:text-cosmos-text'
-            }`}
-          >
-            {cat.toUpperCase()}
-          </button>
-        ))}
+        <span className="font-mono text-xs font-bold text-content-muted mr-1 uppercase">FOCUS:</span>
+        {categories.map((cat) => {
+          const isSelected = selectedCategory === cat;
+          return (
+            <button
+              key={cat}
+              onClick={() => onCategoryChange(cat)}
+              className={`px-3 py-1.5 rounded-xl text-xs font-mono transition-all border ${
+                isSelected
+                  ? 'bg-primary text-white font-bold border-primary shadow-xs'
+                  : 'bg-[#FAF9FF] text-content-secondary border-[#EAE6F2] hover:bg-primary-light/40 hover:text-primary'
+              }`}
+            >
+              {cat.toUpperCase()}
+            </button>
+          );
+        })}
       </div>
 
       {/* Search Input */}
       <div className="w-full laptop:w-72 relative">
-        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-cosmos-muted">
+        <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-content-muted">
           <Search className="h-3.5 w-3.5" />
         </div>
         <Input
@@ -47,7 +50,7 @@ export const ResearchFilterBar: React.FC<ResearchFilterBarProps> = ({
           placeholder="Search literature & variables..."
           value={searchQuery}
           onChange={(e) => onSearchChange(e.target.value)}
-          className="pl-9 h-8 text-xs font-mono bg-cosmos-elevated"
+          className="pl-9 h-9 text-xs font-mono bg-[#FAF9FF] border-[#EAE6F2] rounded-xl text-content-main"
         />
       </div>
     </div>

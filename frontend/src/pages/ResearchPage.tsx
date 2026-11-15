@@ -147,10 +147,10 @@ export const ResearchPage: React.FC = () => {
       {/* 2. Interactive Dataset Explorer & Benchmark Repositories */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="font-heading text-sm font-semibold tracking-wider uppercase text-cosmos-text">
-            Indexed Scientific Datasets & Physiological Models
+          <h2 className="font-heading text-sm font-bold tracking-wider uppercase text-content-main">
+            Indexed Scientific Datasets &amp; Physiological Models
           </h2>
-          <span className="font-mono text-xs text-cosmos-muted">
+          <span className="font-mono text-xs text-content-secondary">
             SELECT TO INSPECT VARIABLES
           </span>
         </div>
@@ -174,25 +174,28 @@ export const ResearchPage: React.FC = () => {
 
       {/* 3. Scientific Visualizations Section */}
       <div className="space-y-4 pt-2">
-        <div className="flex flex-col tablet:flex-row tablet:items-center justify-between gap-3 p-3 rounded bg-cosmos-card border border-cosmos-border">
-          <span className="font-mono text-xs text-cosmos-text uppercase font-semibold">
-            Active Variable: <strong className="text-cosmos-accent">{selectedVariable}</strong>
+        <div className="flex flex-col tablet:flex-row tablet:items-center justify-between gap-3 p-4 rounded-2xl bg-white border border-[#EAE6F2] shadow-soft">
+          <span className="font-mono text-xs text-content-main uppercase font-semibold">
+            Active Variable: <strong className="text-primary font-bold">{selectedVariable}</strong>
           </span>
           <div className="flex flex-wrap items-center gap-2">
-            <span className="font-mono text-xs text-cosmos-muted">SWITCH VARIABLE:</span>
-            {selectedDataset.availableVariables.map((vName) => (
-              <button
-                key={vName}
-                onClick={() => handleVariableChange(vName)}
-                className={`px-2.5 py-1 rounded text-[11px] font-mono transition-colors border ${
-                  selectedVariable === vName
-                    ? 'bg-cosmos-accent text-cosmos-bg font-bold border-cosmos-accent'
-                    : 'bg-cosmos-elevated text-cosmos-text-secondary border-cosmos-border hover:text-cosmos-text'
-                }`}
-              >
-                {vName}
-              </button>
-            ))}
+            <span className="font-mono text-xs font-bold text-content-muted mr-1">SWITCH VARIABLE:</span>
+            {selectedDataset.availableVariables.map((vName) => {
+              const isSelected = selectedVariable === vName;
+              return (
+                <button
+                  key={vName}
+                  onClick={() => handleVariableChange(vName)}
+                  className={`px-3 py-1.5 rounded-xl text-xs font-mono transition-all border ${
+                    isSelected
+                      ? 'bg-primary text-white font-bold border-primary shadow-xs'
+                      : 'bg-[#FAF9FF] text-content-secondary border-[#EAE6F2] hover:bg-primary-light/40 hover:text-primary'
+                  }`}
+                >
+                  {vName}
+                </button>
+              );
+            })}
           </div>
         </div>
 
@@ -222,10 +225,10 @@ export const ResearchPage: React.FC = () => {
       {/* 5. Peer-Reviewed Literature & Citations */}
       <div className="space-y-4 pt-4">
         <div className="flex items-center justify-between">
-          <h2 className="font-heading text-lg font-bold text-cosmos-text">
+          <h2 className="font-heading text-lg font-bold text-content-main">
             Peer-Reviewed Spaceflight Literature ({filteredPapers.length})
           </h2>
-          <span className="font-mono text-xs text-cosmos-muted">NASA NTRS & PUBMED INDEXED</span>
+          <span className="font-mono text-xs text-content-muted">NASA NTRS &amp; PUBMED INDEXED</span>
         </div>
 
         {/* Filter & Search Bar */}
