@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #08090B;
+    color: #F4F1EA;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+  }
+
+  /* Accessible focus states */
+  *:focus-visible {
+    outline: 2px solid #F07832;
+    outline-offset: 2px;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #08090B;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #30353A;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #70777D;
+  }
+}
+
+@layer utilities {
+  /* Subtle glass & border utilities without excessive glow */
+  .cosmos-border {
+    border: 1px solid #30353A;
+  }
+
+  .cosmos-surface {
+    background-color: #191C20;
+    border: 1px solid #30353A;
+  }
+
+  .cosmos-surface-elevated {
+    background-color: #22262B;
+    border: 1px solid #30353A;
+  }
+
+  /* Tabular numbers for biometric & scientific values */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
